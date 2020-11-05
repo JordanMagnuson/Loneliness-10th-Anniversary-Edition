@@ -1,3 +1,8 @@
+// Camera.
+global.view_width_default = 400;
+global.view_height_default = 800;
+
+// Player.
 global.player_speed = 100;
 global.allow_input = true;
 global.orientation_check_visible = false;
@@ -18,3 +23,21 @@ global.movement_inputs[4] = ord("D");
 global.movement_inputs[5] = ord("W");
 global.movement_inputs[6] = ord("A");
 global.movement_inputs[7] = ord("S");
+
+// Is this a touch device?
+switch (os_type) {
+	case os_ios:
+	case os_android:
+		global.is_touch_device = true;
+		break;
+	default:
+		global.is_touch_device = false;
+		break;
+}
+
+// Get pixel ratio for this device.
+// See browser_hdpi extension.
+global.pixel_ratio = browser_get_device_pixel_ratio();
+if (global.pixel_ratio <= 1) global.pixel_ratio = 1;
+global.browser_width_hdpi = browser_width * global.pixel_ratio;
+global.browser_height_hdpi = browser_height * global.pixel_ratio;
