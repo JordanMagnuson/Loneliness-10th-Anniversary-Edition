@@ -1,3 +1,4 @@
+// This is the original flash game level data converted from xml to json.
 global.json_level_data = 
 @'{
   "level": {
