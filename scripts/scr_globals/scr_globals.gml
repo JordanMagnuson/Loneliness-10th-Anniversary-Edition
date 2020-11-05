@@ -2,6 +2,13 @@
 global.view_width_default = 400;
 global.view_height_default = 800;
 
+// Resolution scale multiplier, relative to the original
+// flash game, which was 400x300 pixels, with 400x8000 game room.
+// This constant is used to scale the game sprites and
+// object locations during level building.
+// rm_game room dimensions still have to be set manually.
+global.scale_multiplier = 2;
+
 // Player.
 global.player_speed = 75;
 global.allow_input = true;
