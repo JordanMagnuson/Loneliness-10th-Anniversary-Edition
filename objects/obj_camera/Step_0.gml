@@ -18,7 +18,9 @@ if (last_browser_width != browser_width || last_browser_height != browser_height
 // Follow the follow object.
 if (follow != noone) {
 	x_to = follow.x;
-	y_to = follow.y;
+	
+	// Follow "ahead" of the player--keep player at 1/4 view eight.
+	y_to = follow.y - view_height/4;
 }
 
 // Move towards x_to, y_to with easing.

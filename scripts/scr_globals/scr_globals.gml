@@ -3,7 +3,7 @@ global.view_width_default = 400;
 global.view_height_default = 800;
 
 // Player.
-global.player_speed = 100;
+global.player_speed = 75;
 global.allow_input = true;
 global.orientation_check_visible = false;
 
