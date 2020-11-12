@@ -45,49 +45,49 @@ function scr_load_level(){
 	//	instance_create_layer(rx, ry, "Others", obj_marcher)
   //}			
 	
-	// Mixer centers.
-	var olist = ds_map_find_value(actors, "mixer_center");
-	var count = ds_list_size(olist);
-	for (var i = 0; i < count; i += 1) {
-		var o = olist[| i];		// Equivalent to ds_list_find_value()
-		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
-		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
-		var ry = real(sy) * global.scale_multiplier;
-		instance_create_layer(rx, ry, "Others", obj_mixer_center)
-  }		
-	// Mixers.
-	var olist = ds_map_find_value(actors, "mixer");
-	var count = ds_list_size(olist);
-	for (var i = 0; i < count; i += 1) {
-		var o = olist[| i];		// Equivalent to ds_list_find_value()
-		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
-		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
-		var ry = real(sy) * global.scale_multiplier;
-		instance_create_layer(rx, ry, "Others", obj_mixer)
-  }	
+	//// Mixer centers.
+	//var olist = ds_map_find_value(actors, "mixer_center");
+	//var count = ds_list_size(olist);
+	//for (var i = 0; i < count; i += 1) {
+	//	var o = olist[| i];		// Equivalent to ds_list_find_value()
+	//	var sx = o[? "x"];		// Equivalent to ds_map_find_value()
+	//	var sy = o[? "y"];
+	//	var rx = real(sx) * global.scale_multiplier;
+	//	var ry = real(sy) * global.scale_multiplier;
+	//	instance_create_layer(rx, ry, "Others", obj_mixer_center)
+  //}		
+	//// Mixers.
+	//var olist = ds_map_find_value(actors, "mixer");
+	//var count = ds_list_size(olist);
+	//for (var i = 0; i < count; i += 1) {
+	//	var o = olist[| i];		// Equivalent to ds_list_find_value()
+	//	var sx = o[? "x"];		// Equivalent to ds_map_find_value()
+	//	var sy = o[? "y"];
+	//	var rx = real(sx) * global.scale_multiplier;
+	//	var ry = real(sy) * global.scale_multiplier;
+	//	instance_create_layer(rx, ry, "Others", obj_mixer)
+  //}	
 	
-	//// Orbiter centers.
-	//var olist = ds_map_find_value(actors, "orbiter_center");
-	//var count = ds_list_size(olist);
-	//for (var i = 0; i < count; i += 1) {
-	//	var o = olist[| i];		// Equivalent to ds_list_find_value()
-	//	var sx = o[? "x"];		// Equivalent to ds_map_find_value()
-	//	var sy = o[? "y"];
-	//	var rx = real(sx) * global.scale_multiplier;
-	//	var ry = real(sy) * global.scale_multiplier;
-	//	instance_create_layer(rx, ry, "Others", obj_orbiter_center)
-  //}		
-	//// Orbiters.
-	//var olist = ds_map_find_value(actors, "orbiter");
-	//var count = ds_list_size(olist);
-	//for (var i = 0; i < count; i += 1) {
-	//	var o = olist[| i];		// Equivalent to ds_list_find_value()
-	//	var sx = o[? "x"];		// Equivalent to ds_map_find_value()
-	//	var sy = o[? "y"];
-	//	var rx = real(sx) * global.scale_multiplier;
-	//	var ry = real(sy) * global.scale_multiplier;
-	//	instance_create_layer(rx, ry, "Others", obj_orbiter)
-  //}		
+	// Orbiter centers.
+	var olist = ds_map_find_value(actors, "orbiter_center");
+	var count = ds_list_size(olist);
+	for (var i = 0; i < count; i += 1) {
+		var o = olist[| i];		// Equivalent to ds_list_find_value()
+		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
+		var sy = o[? "y"];
+		var rx = real(sx) * global.scale_multiplier;
+		var ry = real(sy) * global.scale_multiplier;
+		instance_create_layer(rx, ry, "Others", obj_orbiter_center)
+  }		
+	// Orbiters.
+	var olist = ds_map_find_value(actors, "orbiter");
+	var count = ds_list_size(olist);
+	for (var i = 0; i < count; i += 1) {
+		var o = olist[| i];		// Equivalent to ds_list_find_value()
+		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
+		var sy = o[? "y"];
+		var rx = real(sx) * global.scale_multiplier;
+		var ry = real(sy) * global.scale_multiplier;
+		instance_create_layer(rx, ry, "Others", obj_orbiter)
+  }		
 }
