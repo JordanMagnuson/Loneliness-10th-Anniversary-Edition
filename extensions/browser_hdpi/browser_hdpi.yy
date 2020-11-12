@@ -62,7 +62,7 @@
   "tvosThirdPartyFrameworkEntries": [],
   "IncludedResources": [],
   "androidPermissions": [],
-  "copyToTargets": -1,
+  "copyToTargets": 32,
   "parent": {
     "name": "Extensions",
     "path": "folders/Extensions.yy",
