@@ -22,19 +22,7 @@ function scr_load_level(){
   //}	
 	
 	// Jumpers.
-	var olist = ds_map_find_value(actors, "jumper");
-	var count = ds_list_size(olist);
-	for (var i = 0; i < count; i += 1) {
-		var o = olist[| i];		// Equivalent to ds_list_find_value()
-		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
-		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
-		var ry = real(sy) * global.scale_multiplier;
-		instance_create_layer(rx, ry, "Others", obj_jumper)
-  }		
-	
-	//// Marchers.
-	//var olist = ds_map_find_value(actors, "marcher");
+	//var olist = ds_map_find_value(actors, "jumper");
 	//var count = ds_list_size(olist);
 	//for (var i = 0; i < count; i += 1) {
 	//	var o = olist[| i];		// Equivalent to ds_list_find_value()
@@ -42,8 +30,20 @@ function scr_load_level(){
 	//	var sy = o[? "y"];
 	//	var rx = real(sx) * global.scale_multiplier;
 	//	var ry = real(sy) * global.scale_multiplier;
-	//	instance_create_layer(rx, ry, "Others", obj_marcher)
-  //}			
+	//	instance_create_layer(rx, ry, "Others", obj_jumper)
+  //}		
+	
+	// Marchers.
+	var olist = ds_map_find_value(actors, "marcher");
+	var count = ds_list_size(olist);
+	for (var i = 0; i < count; i += 1) {
+		var o = olist[| i];		// Equivalent to ds_list_find_value()
+		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
+		var sy = o[? "y"];
+		var rx = real(sx) * global.scale_multiplier;
+		var ry = real(sy) * global.scale_multiplier;
+		instance_create_layer(rx, ry, "Others", obj_marcher)
+  }			
 	
 	//// Mixer centers.
 	//var olist = ds_map_find_value(actors, "mixer_center");

@@ -20,8 +20,8 @@ function scr_move(argument0, argument1) {
 	    //x = xtarg;
 	    //y = ytarg;
 			// Keep the sprite inside the room.
-			x = clamp(xtarg, sprite_width/2, room_width - sprite_width/2);
-			y = clamp(ytarg, sprite_width/2, room_height - sprite_width/2);
+			x = clamp(xtarg, sprite_width_real/2, room_width - sprite_width_real/2);
+			y = clamp(ytarg, sprite_width_real/2, room_height - sprite_width_real/2);
 	}
 	else {
 	    var sweep_interval = 10;
@@ -35,8 +35,8 @@ function scr_move(argument0, argument1) {
 	                //x = xtarg;
 	                //y = ytarg;  
 									// Keep the sprite inside the room.
-									x = clamp(xtarg, sprite_width/2, room_width - sprite_width/2);
-									y = clamp(ytarg, sprite_width/2, room_height - sprite_width/2);								
+									x = clamp(xtarg, sprite_width_real/2, room_width - sprite_width_real/2);
+									y = clamp(ytarg, sprite_width_real/2, room_height - sprite_width_real/2);								
 	                exit;       
 	            }   
 	        }

@@ -10,14 +10,14 @@ global.view_width_default = 400 * global.scale_multiplier ;
 global.view_height_default = 300 * global.scale_multiplier ;
 
 // Player.
-// Default speed = 75; debug = 300
+// Default speed = 75; debug = 400
 global.player_speed = 400 * global.scale_multiplier; // Do I need to factor room_speed in here?
 global.allow_input = true;
 global.orientation_check_visible = false;
 
 // Others.
 //global.follower_speed = 180 / room_speed; 
-//global.other_speed_default = 180 / room_speed; 
+global.other_speed_default = 72 / room_speed; 
 global.leaver_speed = 60 / room_speed * global.scale_multiplier;
 global.leaver_fade_out_time = 3; // Time in seconds for leavers to fade out.
 //global.follower_min_distance = obj_player.sprite_width;
