@@ -1,1 +1,1 @@
-//scr_load_level();
+scr_load_level();
