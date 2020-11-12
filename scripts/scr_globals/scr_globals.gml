@@ -3,18 +3,28 @@
 // This constant is used to scale the game sprites and
 // object locations during level building.
 // rm_game room dimensions still have to be set manually.
-global.scale_multiplier = 2;
+global.scale_multiplier = 1;
 
 // Camera.
 global.view_width_default = 400 * global.scale_multiplier ;
 global.view_height_default = 300 * global.scale_multiplier ;
 
 // Player.
-// Default speed = 75;
-global.player_speed = 300 * global.scale_multiplier;
+// Default speed = 75; debug = 300
+global.player_speed = 75 * global.scale_multiplier; // Do I need to factor room_speed in here?
 global.allow_input = true;
 global.orientation_check_visible = false;
 
+// Others.
+//global.follower_speed = 180 / room_speed; 
+//global.other_speed_default = 180 / room_speed; 
+global.leaver_speed = 60 / room_speed * global.scale_multiplier;
+global.leaver_fade_out_time = 3; // Time in seconds for leavers to fade out.
+//global.follower_min_distance = obj_player.sprite_width;
+global.player_scare_radius = 40 * global.scale_multiplier;
+global.leaver_scare_radius = 60 * global.scale_multiplier;
+
+// Movement keys.
 //  1-dimensional array, where each input represents a 90-degree increment. 
 // So, “D” is 0 degrees (right), “W” is 90 degrees (up), “A” is 180 degrees (left), 
 // and “S” is 270 degrees (down).
