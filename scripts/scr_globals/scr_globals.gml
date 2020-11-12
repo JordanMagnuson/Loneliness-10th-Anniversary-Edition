@@ -11,7 +11,7 @@ global.view_height_default = 300 * global.scale_multiplier ;
 
 // Player.
 // Default speed = 75; debug = 400
-global.player_speed = 400 * global.scale_multiplier; // Do I need to factor room_speed in here?
+global.player_speed = 75 * global.scale_multiplier; // Do I need to factor room_speed in here?
 global.allow_input = true;
 global.orientation_check_visible = false;
 
