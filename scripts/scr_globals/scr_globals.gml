@@ -17,7 +17,7 @@ global.orientation_check_visible = false;
 
 // Others.
 //global.follower_speed = 180 / room_speed; 
-global.other_speed_default = 72 / room_speed; 
+global.other_speed_default = 72 / room_speed * global.scale_multiplier; 
 global.leaver_speed = 60 / room_speed * global.scale_multiplier;
 global.leaver_fade_out_time = 3; // Time in seconds for leavers to fade out.
 //global.follower_min_distance = obj_player.sprite_width;
