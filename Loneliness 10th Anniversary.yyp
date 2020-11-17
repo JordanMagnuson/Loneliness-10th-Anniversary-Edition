@@ -2,12 +2,15 @@
   "resources": [
     {"id":{"name":"spr_other","path":"sprites/spr_other/spr_other.yy",},"order":1,},
     {"id":{"name":"obj_darkness_overlay","path":"objects/obj_darkness_overlay/obj_darkness_overlay.yy",},"order":9,},
+    {"id":{"name":"gmcallback_start_game","path":"scripts/gmcallback_start_game/gmcallback_start_game.yy",},"order":9,},
+    {"id":{"name":"fnt_casual_encounter","path":"fonts/fnt_casual_encounter/fnt_casual_encounter.yy",},"order":0,},
     {"id":{"name":"scr_level_data","path":"scripts/scr_level_data/scr_level_data.yy",},"order":1,},
     {"id":{"name":"scr_custom_collision_circle_list","path":"scripts/scr_custom_collision_circle_list/scr_custom_collision_circle_list.yy",},"order":5,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":1,},
     {"id":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},"order":0,},
     {"id":{"name":"scr_globals","path":"scripts/scr_globals/scr_globals.yy",},"order":3,},
     {"id":{"name":"scr_map_value","path":"scripts/scr_map_value/scr_map_value.yy",},"order":6,},
+    {"id":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},"order":1,},
     {"id":{"name":"browser_hdpi","path":"extensions/browser_hdpi/browser_hdpi.yy",},"order":0,},
     {"id":{"name":"snd_music","path":"sounds/snd_music/snd_music.yy",},"order":0,},
     {"id":{"name":"obj_mixer_center","path":"objects/obj_mixer_center/obj_mixer_center.yy",},"order":3,},
@@ -23,10 +26,13 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":2,},
     {"id":{"name":"obj_other","path":"objects/obj_other/obj_other.yy",},"order":0,},
     {"id":{"name":"spr_debug","path":"sprites/spr_debug/spr_debug.yy",},"order":3,},
+    {"id":{"name":"obj_title_screen","path":"objects/obj_title_screen/obj_title_screen.yy",},"order":6,},
     {"id":{"name":"scr_deacticate_instances","path":"scripts/scr_deacticate_instances/scr_deacticate_instances.yy",},"order":7,},
+    {"id":{"name":"scr_resize_title_screen","path":"scripts/scr_resize_title_screen/scr_resize_title_screen.yy",},"order":8,},
     {"id":{"name":"obj_leaver","path":"objects/obj_leaver/obj_leaver.yy",},"order":8,},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":2,},
     {"id":{"name":"obj_marcher","path":"objects/obj_marcher/obj_marcher.yy",},"order":5,},
+    {"id":{"name":"ToggleFullscreen","path":"extensions/ToggleFullscreen/ToggleFullscreen.yy",},"order":1,},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":0,},
   ],
   "Options": [
@@ -48,6 +54,7 @@
     "children": [],
   },
   "RoomOrder": [
+    {"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},
     {"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},
   ],
   "Folders": [

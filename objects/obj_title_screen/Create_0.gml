@@ -1,0 +1,44 @@
+// Initialize global variables.
+scr_globals();
+
+//// Initialize Game Analytics extension. 
+//if (global.game_analytics_enabled) {
+//	// Game version.
+//	ga_configureBuild(global.game_version);
+
+//	// Development settings - should be disabled in production builds!
+//	if (global.debug) {
+//		ga_setEnabledInfoLog(true);
+//		ga_setEnabledVerboseLog(true);
+//	}
+
+//	// Initialize with game id and scret key. From GameAnalytics.com dashboard.
+//	ga_initialize("4f8f0bcb1f1c6d19d0de010b2b94ce51", "2e0920f85aee134932c40afb7604f75117bcbffb");
+//}
+
+//// Game Analytics - register this screen.
+//if (global.game_analytics_enabled) {
+//	ga_addProgressionEvent(GA_PROGRESSIONSTATUS_START, "start_screen");
+//}
+
+window_set_cursor(cr_handpoint);
+
+//window_width = window_get_width();
+//width = sprite_get_width(spr_start_button)
+//x = window_get_x() + window_width/2 - width/2;
+//y = window_get_y() + 32;
+//window_get_width();
+//start_button = clickable_add(x, y, sprite_get_tpe(spr_start_button, 0), "gmcallback_fullscreen", "_self", "width=700, height=500, menubar=0, toolbar=0, scrollbars=0");4
+x = 0;
+y = 0;
+
+// TODO: this clickable_exists check is breaking things for som reason...
+//if (!clickable_exists(global.start_button)) {
+//	global.start_button = clickable_add(x, y, sprite_get_tpe(spr_debug, 0), "gmcallback_start_game", "_self", "");
+//}
+
+//global.start_button = clickable_add(x, y, sprite_get_tpe(spr_debug, 0), "gmcallback_start_game", "_self", "");
+
+surf_start_button = 0;
+spr_start_button = 0;
+scr_resize_title_screen();
