@@ -16,8 +16,8 @@
   "includeTTF": true,
   "TTFName": "${project_dir}\\fonts\\fntCasualEncounter\\CasualEncounter.ttf",
   "textureGroupId": {
-    "name": "",
-    "path": "",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
   "glyphs": {
