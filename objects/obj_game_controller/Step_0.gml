@@ -5,3 +5,5 @@ if (!audio_music && audio_sound_is_playable(snd_music)) {
 	audio_music = audio_play_sound(snd_music,1,true);
 	//audio_sound_gain(audio_music, 0, 0);	
 }
+
+scr_deacticate_instances(true);
