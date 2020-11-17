@@ -59,3 +59,6 @@ global.pixel_ratio = browser_get_device_pixel_ratio();
 if (global.pixel_ratio <= 1) global.pixel_ratio = 1;
 global.browser_width_hdpi = browser_width * global.pixel_ratio;
 global.browser_height_hdpi = browser_height * global.pixel_ratio;
+
+global.gui_width = display_get_gui_width();
+global.gui_height = display_get_gui_height();

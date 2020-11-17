@@ -58,6 +58,9 @@ function scr_canvas_fullscreen(argument0, argument1) {
 
 	// set canvas size to page pixel size:
 	browser_stretch_canvas(w, h);
+	
+	global.gui_width = display_get_gui_width();
+	global.gui_height = display_get_gui_height();
 
 	//show_debug_message("window resized");
 
