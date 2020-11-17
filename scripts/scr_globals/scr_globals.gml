@@ -3,7 +3,7 @@
 // This constant is used to scale the game sprites and
 // object locations during level building.
 // rm_game room dimensions still have to be set manually.
-global.scale_multiplier = 1;
+global.scale_multiplier = 2;
 
 // Camera.
 global.view_width_default = 400 * global.scale_multiplier ;
