@@ -36,6 +36,8 @@ function scr_canvas_fullscreen(argument0, argument1) {
 	}
 
 	// Set GUI scale depending on window size.
+	global.gui_width = display_get_gui_width();
+	global.gui_height = display_get_gui_height();	
 	if (global.browser_width_hdpi < 425 || global.browser_height_hdpi < 425) {
 		global.gui_scale = 1.5;
 	}
@@ -58,9 +60,6 @@ function scr_canvas_fullscreen(argument0, argument1) {
 
 	// set canvas size to page pixel size:
 	browser_stretch_canvas(w, h);
-	
-	global.gui_width = display_get_gui_width();
-	global.gui_height = display_get_gui_height();
 
 	//show_debug_message("window resized");
 

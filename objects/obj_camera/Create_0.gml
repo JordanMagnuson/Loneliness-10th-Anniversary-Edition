@@ -47,8 +47,6 @@ camera_movement_precision = 0.01;
 // Don't change anything below.
 last_browser_width = browser_width;
 last_browser_height = browser_height;
-surface_width = global.browser_width_hdpi;
-surface_height = global.browser_height_hdpi;
-scr_canvas_fullscreen(surface_width, surface_height);
+scr_canvas_fullscreen(browser_width, browser_height);
 
 alarm[0] = 3;

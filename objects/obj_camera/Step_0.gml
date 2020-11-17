@@ -8,8 +8,6 @@
 // See https://www.yoyogames.com/blog/67/scaling-for-html5
 if (last_browser_width != browser_width || last_browser_height != browser_height) {
 	show_debug_message("window size change");
-	surface_width = global.browser_width_hdpi; //display_get_width();
-	surface_height = global.browser_height_hdpi; //display_get_height();
 	last_browser_width = browser_width;
 	last_browser_height = browser_height;	
 	scr_canvas_fullscreen(browser_width, browser_height);
@@ -20,7 +18,7 @@ if (follow != noone) {
 	x_to = follow.x;
 	
 	// Follow "ahead" of the player--keep player at 1/4 view eight.
-	y_to = follow.y - view_height/4;
+	y_to = follow.y; //- view_height/4;
 }
 
 // Move towards x_to, y_to with easing.
