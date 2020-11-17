@@ -23,6 +23,7 @@
     {"id":{"name":"scr_load_level","path":"scripts/scr_load_level/scr_load_level.yy",},"order":0,},
     {"id":{"name":"obj_gmlive","path":"objects/obj_gmlive/obj_gmlive.yy",},"order":2,},
     {"id":{"name":"spr_clouds","path":"sprites/spr_clouds/spr_clouds.yy",},"order":6,},
+    {"id":{"name":"scr_is_browser","path":"scripts/scr_is_browser/scr_is_browser.yy",},"order":10,},
     {"id":{"name":"obj_mixer","path":"objects/obj_mixer/obj_mixer.yy",},"order":2,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":2,},
     {"id":{"name":"obj_other","path":"objects/obj_other/obj_other.yy",},"order":0,},
