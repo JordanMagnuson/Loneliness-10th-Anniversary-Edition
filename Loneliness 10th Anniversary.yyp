@@ -1,7 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_other","path":"sprites/spr_other/spr_other.yy",},"order":1,},
-    {"id":{"name":"obj_darkness_overlay","path":"objects/obj_darkness_overlay/obj_darkness_overlay.yy",},"order":9,},
+    {"id":{"name":"obj_darkness_overlay","path":"objects/obj_darkness_overlay/obj_darkness_overlay.yy",},"order":5,},
     {"id":{"name":"gmcallback_start_game","path":"scripts/gmcallback_start_game/gmcallback_start_game.yy",},"order":9,},
     {"id":{"name":"fnt_casual_encounter","path":"fonts/fnt_casual_encounter/fnt_casual_encounter.yy",},"order":0,},
     {"id":{"name":"scr_level_data","path":"scripts/scr_level_data/scr_level_data.yy",},"order":1,},
@@ -30,7 +30,7 @@
     {"id":{"name":"GMLive","path":"scripts/GMLive/GMLive.yy",},"order":0,},
     {"id":{"name":"GMLiveAPI","path":"scripts/GMLiveAPI/GMLiveAPI.yy",},"order":1,},
     {"id":{"name":"spr_debug","path":"sprites/spr_debug/spr_debug.yy",},"order":3,},
-    {"id":{"name":"obj_title_screen","path":"objects/obj_title_screen/obj_title_screen.yy",},"order":6,},
+    {"id":{"name":"obj_title_screen","path":"objects/obj_title_screen/obj_title_screen.yy",},"order":4,},
     {"id":{"name":"scr_deacticate_instances","path":"scripts/scr_deacticate_instances/scr_deacticate_instances.yy",},"order":7,},
     {"id":{"name":"scr_resize_title_screen","path":"scripts/scr_resize_title_screen/scr_resize_title_screen.yy",},"order":8,},
     {"id":{"name":"obj_leaver","path":"objects/obj_leaver/obj_leaver.yy",},"order":8,},
@@ -76,7 +76,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects/others.yy","order":5,"resourceVersion":"1.0","name":"others","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/others.yy","order":3,"resourceVersion":"1.0","name":"others","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions/GMLive.yy","order":2,"resourceVersion":"1.0","name":"GMLive","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [

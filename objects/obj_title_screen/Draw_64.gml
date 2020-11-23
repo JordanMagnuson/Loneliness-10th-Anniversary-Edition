@@ -37,20 +37,20 @@ draw_text_transformed(xx, yy, title, 2 * global.gui_scale, 2 * global.gui_scale,
 
 // By line
 //draw_set_font(fntVerdana);
-yy += string_h;
+yy += string_h + vs;
 if (global.browser_width_hdpi < 320)
-	var byline = "A notgame by \nJordan Magnuson";
+	var byline = "A notgame by \nJordan Magnuson \nMusic by \nKevin MacLeod";
 else
-	var byline = "A notgame by Jordan Magnuson";
+	var byline = "A notgame by Jordan Magnuson \nMusic by Kevin MacLeod";
 draw_text_transformed(xx, yy, byline, global.gui_scale, global.gui_scale, 0);
 
 // Instructions
 yy += 64*global.gui_scale;
 draw_set_color(c_yellow);
 if (global.browser_width_hdpi < 320)
-	var instructions = "Arrow keys (or touch) \nto move. \nBest with headphones."
+	var instructions = "Arrow keys (or touch) \nto move."
 else
-	var instructions = "Arrow keys (or touch) to move. \nBest with headphones."
+	var instructions = "Arrow keys (or touch) to move."
 draw_text_transformed(xx, yy, instructions, global.gui_scale, global.gui_scale, 0);
 draw_set_color(c_white);
 
