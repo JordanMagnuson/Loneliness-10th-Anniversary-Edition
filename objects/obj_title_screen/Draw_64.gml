@@ -1,7 +1,7 @@
 // Live coding with GMLive extension. See https://yal.cc/r/17/gmlive/
-//if (global.debug && live_call()) {
-//	return live_result;
-//}	
+if (global.debug && live_call()) {
+	return live_result;
+}	
 
 //draw_sprite(sStartScreen,0,0,0);
 
@@ -29,9 +29,9 @@ vs = surface_height / 32;
 xx = surface_width/2;
 yy = surface_height/4;
 if (global.browser_width_hdpi < 320)
-	var title = "Freedom \nBridge";
+	var title = "Loneliness";
 else
-	var title = "Freedom Bridge";
+	var title = "Loneliness";
 string_h = global.gui_scale * 2 * string_height(title);	
 draw_text_transformed(xx, yy, title, 2 * global.gui_scale, 2 * global.gui_scale, 0);
 
