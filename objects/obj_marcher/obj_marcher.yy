@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_debug",
-    "path": "sprites/spr_debug/spr_debug.yy",
+    "name": "spr_other",
+    "path": "sprites/spr_other/spr_other.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_marcher","path":"objects/obj_marcher/obj_marcher.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_marcher","path":"objects/obj_marcher/obj_marcher.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_marcher","path":"objects/obj_marcher/obj_marcher.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],

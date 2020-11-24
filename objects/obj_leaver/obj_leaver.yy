@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_debug",
-    "path": "sprites/spr_debug/spr_debug.yy",
+    "name": "spr_other",
+    "path": "sprites/spr_other/spr_other.yy",
   },
   "solid": false,
   "visible": true,

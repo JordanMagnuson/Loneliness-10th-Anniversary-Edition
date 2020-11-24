@@ -1,3 +1,4 @@
+scale_multiplier = global.scale_multiplier;
 opacity = 1;
 fading = false;
 

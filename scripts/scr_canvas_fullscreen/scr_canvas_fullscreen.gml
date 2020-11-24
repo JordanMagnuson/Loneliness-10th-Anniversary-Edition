@@ -21,19 +21,24 @@ function scr_canvas_fullscreen(argument0, argument1) {
 	window_center();
 
 	global.aspect_ratio = (w / h);
+	
+	// Always fit the width the the screen.
+	// (So on tall screens, you'll see a *lot* more of the playing field).
+	view_width = view_width_default;	
+	view_height = (view_width / global.aspect_ratio);
 
-	// Tall.
-	if (global.aspect_ratio < aspect_default)
-	{
-	  view_height = view_height_default;
-	  view_width = (view_height * global.aspect_ratio);	
-	}
-	// Wide. 
-	else
-	{
-		view_width = view_width_default;	
-		view_height = (view_width / global.aspect_ratio);
-	}
+	//// Tall.
+	//if (global.aspect_ratio < aspect_default)
+	//{
+	//  view_height = view_height_default;
+	//  view_width = (view_height * global.aspect_ratio);	
+	//}
+	//// Wide. 
+	//else
+	//{
+	//	view_width = view_width_default;	
+	//	view_height = (view_width / global.aspect_ratio);
+	//}
 
 	// Set GUI scale depending on window size.
 	global.gui_width = display_get_gui_width();
