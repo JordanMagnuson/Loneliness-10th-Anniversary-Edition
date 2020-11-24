@@ -29,9 +29,9 @@ vs = surface_height / 32;
 xx = surface_width/2;
 yy = surface_height/4;
 if (global.browser_width_hdpi < 320)
-	var title = "Loneliness";
+	var title = "LONELINESS";
 else
-	var title = "Loneliness";
+	var title = "LONELINESS";
 string_h = global.gui_scale * 2 * string_height(title);	
 draw_text_transformed(xx, yy, title, 2 * global.gui_scale, 2 * global.gui_scale, 0);
 

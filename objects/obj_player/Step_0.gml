@@ -1,4 +1,9 @@
-mov_speed = global.player_speed;
+// TODO: in the original game player moved slower and slower as they approached
+// the top of the game world.
+// Original formula: spdMax = ((y / MainWorld.height) * (SPEED_MAX * (1 / 3))) + (SPEED_MAX * (2 / 3));
+//mov_speed = global.player_speed;
+mov_speed = ((y / room_height) * (global.player_speed * (1 / 3))) + (global.player_speed * (2 / 3));
+show_debug_message("move speed: " + string(mov_speed));
 
 //show_debug_message("move speed: " + string(mov_speed));
 
@@ -18,6 +23,15 @@ for ( var i = 0; i < array_length_1d(global.movement_inputs); i++){
 }
  
 var moving = ( point_distance(0,0,move_xinput,move_yinput) > 0 );
+
+// Force player upwards at end.
+// Formula from original game: if (y <= FP.screen.height * 2.5) { force up }
+if (y <= obj_camera.view_height * 2.5) {
+//if (true) {
+	global.allow_input = false;
+	scr_move(move_distance, 90);
+}
+
 
 if (global.allow_input && !global.orientation_check_visible) {
 	// "moving" = arrow key movement.
