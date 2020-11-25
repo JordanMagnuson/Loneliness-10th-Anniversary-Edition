@@ -15,6 +15,8 @@ if (global.is_browser && spr_follow_link) {
 	// To combat this, when we package the game we need to add "overflow: hidden" to the body tag in index.html.	
 	if (!follow_link || !clickable_exists(follow_link)) {
 		window_set_cursor(cr_handpoint);
-		follow_link = clickable_add(0, 0, sprite_get_tpe(spr_follow_link, 0), "https://www.necessarygames.com/my-games-link", "_blank", "");
+		//var url = "https://www.necessarygames.com/my-games-link";
+		var url = "https://www.necessarygames.com/my-games/loneliness#disqus_thread";
+		follow_link = clickable_add(0, 0, sprite_get_tpe(spr_follow_link, 0), url, "_blank", "");
 	}	
 }

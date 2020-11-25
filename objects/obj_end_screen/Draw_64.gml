@@ -29,9 +29,9 @@ vs = floor(surface_height / 10);
 xx = surface_width/2;
 yy = surface_height/3;
 
-var title = "LONELINESS";
+var title = "Thanks for playing.";
 string_h = global.gui_scale * 2 * string_height(title);	
-draw_text_transformed(xx, yy, title, 2 * global.gui_scale, 2 * global.gui_scale, 0);
+draw_text_transformed(xx, yy, title, global.gui_scale, global.gui_scale, 0);
 
 // Follow link
 if (!spr_follow_link) {
@@ -44,12 +44,35 @@ if (!spr_follow_link) {
 	if (global.is_touch_device) {
 		instructions = "Touch ";
 	}	
+	//if (global.aspect_ratio < 1 || global.browser_width_hdpi < 900)	{
+	//	instructions += "the screen to explore \nmore of my games.";
+	//}
+	//else {
+	//	instructions += "the screen to explore more of my games.";
+	//}
 	if (global.aspect_ratio < 1 || global.browser_width_hdpi < 900)	{
-		instructions += "the screen to explore \nmore of my games";
+		instructions += "the screen to leave a \ncomment about this notgame.";
+		if (!global.is_touch_device) {
+			if (global.is_browser) {
+				instructions += "\n\nOr close your \nbrowser to quit."
+			}
+			else {
+				instructions += "\n\nOr press Esc to quit."
+			}
+		}
 	}
 	else {
-		instructions += "the screen to explore more of my games";
-	}
+		instructions += "the screen to leave a \ncomment about this notgame.";
+		if (!global.is_touch_device) {
+			if (global.is_browser) {
+				instructions += "\n\nOr close your browser to quit."
+			}
+			else {
+				instructions += "\n\nOr press Esc to quit."
+			}
+		}
+	}	
+	
 	
 	draw_text_transformed(xx, yy, instructions, global.gui_scale, global.gui_scale, 0);
 	//var string_w = global.gui_scale * string_width(instructions);
