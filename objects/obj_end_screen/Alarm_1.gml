@@ -1,0 +1,1 @@
+show_follow_txt = true;

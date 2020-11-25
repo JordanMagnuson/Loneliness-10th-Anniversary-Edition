@@ -34,6 +34,7 @@
     {"id":{"name":"obj_other","path":"objects/obj_other/obj_other.yy",},"order":0,},
     {"id":{"name":"spr_debug","path":"sprites/spr_debug/spr_debug.yy",},"order":3,},
     {"id":{"name":"obj_title_screen","path":"objects/obj_title_screen/obj_title_screen.yy",},"order":4,},
+    {"id":{"name":"spr_end_screen_gradient","path":"sprites/spr_end_screen_gradient/spr_end_screen_gradient.yy",},"order":7,},
     {"id":{"name":"scr_deacticate_instances","path":"scripts/scr_deacticate_instances/scr_deacticate_instances.yy",},"order":7,},
     {"id":{"name":"scr_resize_title_screen","path":"scripts/scr_resize_title_screen/scr_resize_title_screen.yy",},"order":8,},
     {"id":{"name":"obj_leaver","path":"objects/obj_leaver/obj_leaver.yy",},"order":8,},
