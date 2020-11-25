@@ -1,4 +1,4 @@
-global.debug = false;
+global.debug = true;
 
 // Resolution scale multiplier, relative to the original
 // flash game, which was 400x300 pixels, with 400x8000 game room.
@@ -55,6 +55,12 @@ global.movement_inputs[4] = ord("D");
 global.movement_inputs[5] = ord("W");
 global.movement_inputs[6] = ord("A");
 global.movement_inputs[7] = ord("S");
+
+// Is this a browser?
+global.is_browser = true;
+if (os_browser == browser_not_a_browser) {
+	global.is_browser = false;
+}
 
 // Is this a touch device?
 switch (os_type) {
