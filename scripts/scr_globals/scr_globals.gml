@@ -1,4 +1,4 @@
-global.debug = true;
+global.debug = false;
 
 // Resolution scale multiplier, relative to the original
 // flash game, which was 400x300 pixels, with 400x8000 game room.

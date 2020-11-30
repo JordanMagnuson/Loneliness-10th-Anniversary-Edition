@@ -26,10 +26,15 @@ var moving = ( point_distance(0,0,move_xinput,move_yinput) > 0 );
 
 // Force player upwards at end.
 // Formula from original game: if (y <= FP.screen.height * 2.5) { force up }
-if (y <= obj_camera.view_height * 2.5) {
+if (y <= obj_camera.view_height * 3.5) {
 //if (true) {
 	global.allow_input = false;
 	scr_move(move_distance, 90);
+}
+
+// Go to end screen.
+if (y <= -sprite_width_real) {
+	room_goto(rm_end_screen);
 }
 
 

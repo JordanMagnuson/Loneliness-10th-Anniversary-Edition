@@ -8,16 +8,17 @@ cam_y2 = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[
 
 //show_debug_message("alpha: " + string(alpha));
 if (obj_player.y > light_to_dark_switch_line) {
-	alpha = scr_map_value(obj_player.y, light_to_dark_switch_line, room_height, 0, 1);
+	// Light overlay.
+	alpha = scr_map_value(obj_player.y, light_to_dark_switch_line, room_height, 0, light_overlay_max_alpha);
 	draw_set_alpha(alpha);
-	gpu_set_blendmode(bm_normal)
 	draw_set_color(c_white);
 	draw_rectangle(cam_x1, cam_y1, cam_x2, cam_y2, false);
 	draw_set_alpha(1);
 	draw_set_color(c_white);
 }
 else {
-	alpha = scr_map_value(light_to_dark_switch_line-obj_player.y, 0, light_to_dark_switch_line, 0, 1);
+	// Dark overlay.
+	alpha = scr_map_value(light_to_dark_switch_line-obj_player.y, 0, light_to_dark_switch_line, 0, dark_overlay_max_alpha);
 	show_debug_message("dark alpha: " + string(alpha));
 	draw_set_alpha(alpha);
 	draw_set_color(c_black);

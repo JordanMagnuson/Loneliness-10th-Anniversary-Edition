@@ -78,7 +78,7 @@ draw_sprite_ext(spr_follow_link,0,0,0,1,1,0,c_white,follow_txt_alpha);
 // Quit text.
 quit_txt = "";
 yy += follow_txt_h;
-draw_set_alpha(1); 
+draw_set_alpha(quit_txt_alpha); 
 if (global.aspect_ratio < 1 || global.browser_width_hdpi < 900)	{
 	if (!global.is_touch_device) {
 		if (global.is_browser) {
@@ -100,6 +100,7 @@ else {
 	}
 }	
 draw_text_transformed(xx, quit_txt_yy, quit_txt, global.gui_scale, global.gui_scale, 0);
+draw_set_alpha(1);
 
 
 
