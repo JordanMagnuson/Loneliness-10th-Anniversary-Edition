@@ -6,7 +6,7 @@ y = 0;
 // Fade in constants/variables.
 show_thanks_txt = false;
 thanks_txt_alpha = 0;
-thanks_txt_fade_start = 0.01;
+thanks_txt_fade_start = 0.1;
 thanks_txt_fade_time = 5;
 alarm[0] = thanks_txt_fade_start * room_speed;
 

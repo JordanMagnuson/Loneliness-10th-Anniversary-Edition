@@ -26,16 +26,24 @@ var moving = ( point_distance(0,0,move_xinput,move_yinput) > 0 );
 
 // Force player upwards at end.
 // Formula from original game: if (y <= FP.screen.height * 2.5) { force up }
-if (y <= obj_camera.view_height * 3.5) {
+if (y <= obj_camera.view_height * 2.5) {
 //if (true) {
 	global.allow_input = false;
 	scr_move(move_distance, 90);
+	if (!instance_exists(obj_fade_out_game))
+		instance_create_layer(0,0,"Fade",obj_fade_out_game);
+}
+
+if (y <= obj_camera.view_height * 3 && !fade_out_started) {
+	show_debug_message("creating fade");
+	instance_create_layer(x,y,"Fade",obj_fade_out_game);
+	fade_out_started = true;
 }
 
 // Go to end screen.
-if (y <= -sprite_width_real) {
-	room_goto(rm_end_screen);
-}
+//if (y <= -sprite_width_real) {
+//	room_goto(rm_end_screen);
+//}
 
 
 if (global.allow_input && !global.orientation_check_visible) {

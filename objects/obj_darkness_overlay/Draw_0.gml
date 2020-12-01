@@ -19,7 +19,7 @@ if (obj_player.y > light_to_dark_switch_line) {
 else {
 	// Dark overlay.
 	alpha = scr_map_value(light_to_dark_switch_line-obj_player.y, 0, light_to_dark_switch_line, 0, dark_overlay_max_alpha);
-	show_debug_message("dark alpha: " + string(alpha));
+	//show_debug_message("dark alpha: " + string(alpha));
 	draw_set_alpha(alpha);
 	draw_set_color(c_black);
 	draw_rectangle(cam_x1, cam_y1, cam_x2, cam_y2, false);

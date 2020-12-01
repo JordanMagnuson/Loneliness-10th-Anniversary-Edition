@@ -1,4 +1,4 @@
-global.debug = true;
+global.debug = false;
 
 // Force objects into 4/3 aspect ratio at center of screen?
 // This will recreate the view from the original game (which was 400x300).
