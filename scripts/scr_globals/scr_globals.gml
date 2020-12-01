@@ -37,6 +37,7 @@ else {
 }
 global.allow_input = true;
 global.orientation_check_visible = false;
+global.fade_out_started = false;
 
 // Others.
 //global.follower_speed = 180 / room_speed; 

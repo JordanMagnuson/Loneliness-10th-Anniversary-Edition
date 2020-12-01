@@ -27,18 +27,23 @@ var moving = ( point_distance(0,0,move_xinput,move_yinput) > 0 );
 // Force player upwards at end.
 // Formula from original game: if (y <= FP.screen.height * 2.5) { force up }
 if (y <= obj_camera.view_height * 2.5) {
-//if (true) {
 	global.allow_input = false;
 	scr_move(move_distance, 90);
-	if (!instance_exists(obj_fade_out_game))
-		instance_create_layer(0,0,"Fade",obj_fade_out_game);
 }
 
-if (y <= obj_camera.view_height * 3 && !fade_out_started) {
+//if (global.fade_out_started) {
+//	global.allow_input = false;
+//	scr_move(move_distance, 90);
+//}
+
+// Add fade out at end. This was not in the original game, but I feel
+// that it provides a smoother end-game transition.
+if (y <= obj_camera.view_height * 3 && !global.fade_out_started) {
+	global.fade_out_started = true;	
 	show_debug_message("creating fade");
 	instance_create_layer(x,y,"Fade",obj_fade_out_game);
-	fade_out_started = true;
 }
+
 
 // Go to end screen.
 //if (y <= -sprite_width_real) {
