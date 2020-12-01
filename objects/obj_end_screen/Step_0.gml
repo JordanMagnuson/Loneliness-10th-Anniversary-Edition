@@ -19,7 +19,7 @@ if (show_quit_txt && quit_txt_alpha < 1)
 	
 
 // HTML5 clickable (for follow link).
-if (global.is_browser && spr_follow_link) {
+if (global.is_browser && spr_follow_link && show_follow_txt) {
 	// Note that because of a bug in clickable_add, the clickable that is generated is sometimes larger than the sprite.
 	// This means that if we're adding fullscreen clickable, we get ugly scroll bars in the browser window.
 	// To combat this, when we package the game we need to add "overflow: hidden" to the body tag in index.html.	
