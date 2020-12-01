@@ -10,7 +10,7 @@ sprite_width_real = sprite_width;
 //y = 7944 * global.scale_multiplier;
 
 x = room_width / 2;
-y = room_height - (50 - global.scale_multiplier);
+y = room_height - (28 * global.scale_multiplier);
 //y = global.view_height_default * 5;
 
 
