@@ -1,7 +1,7 @@
 scale_multiplier = global.scale_multiplier;
 mouse_clicked = false;
 start_mouse_input = false;
-sprite_width_real = sprite_width*scale_multiplier;
+sprite_width_real = sprite_width;
 
 // Starting player position taken from original level data = 192, 7944
 // NOTE: I don't think this value from the level data was actually used in the game.

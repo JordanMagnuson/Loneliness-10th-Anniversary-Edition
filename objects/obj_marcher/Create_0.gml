@@ -1,5 +1,5 @@
 event_inherited();
-sprite_width_real = sprite_width*global.scale_multiplier;
+sprite_width_real = sprite_width;
 
 if random(1) > 0.5
   direction = 0
