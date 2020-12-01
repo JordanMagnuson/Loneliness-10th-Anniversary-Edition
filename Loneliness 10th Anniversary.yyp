@@ -23,6 +23,7 @@
     {"id":{"name":"GMLive","path":"scripts/GMLive/GMLive.yy",},"order":0,},
     {"id":{"name":"scr_canvas_fullscreen","path":"scripts/scr_canvas_fullscreen/scr_canvas_fullscreen.yy",},"order":4,},
     {"id":{"name":"spr_bg_old","path":"sprites/spr_bg_old/spr_bg_old.yy",},"order":5,},
+    {"id":{"name":"ImageLoadBar","path":"extensions/ImageLoadBar/ImageLoadBar.yy",},"order":3,},
     {"id":{"name":"obj_orbiter_center","path":"objects/obj_orbiter_center/obj_orbiter_center.yy",},"order":6,},
     {"id":{"name":"obj_sitter","path":"objects/obj_sitter/obj_sitter.yy",},"order":1,},
     {"id":{"name":"obj_orbiter","path":"objects/obj_orbiter/obj_orbiter.yy",},"order":7,},
