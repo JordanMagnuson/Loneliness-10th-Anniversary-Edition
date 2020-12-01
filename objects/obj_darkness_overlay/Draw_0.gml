@@ -27,9 +27,20 @@ else {
 	draw_set_color(c_white);	
 }
 
-// Debug line
+// Debug lines
 if (global.debug) {
+	// light_to_dark_switch_line
 	draw_set_color(c_red);
 	draw_line(0, light_to_dark_switch_line, room_width, light_to_dark_switch_line);
-	draw_set_color(c_white);
+
+	
+	// 4/3 edges of screen. Put these here since we don't really have anywhere else to put them.
+	if (global.force_objects_into_4_3) {
+		var left_edge = ((480 * global.scale_multiplier) - (400 * global.scale_multiplier))/2;	
+		var right_edge = (400 * global.scale_multiplier) + ((480 * global.scale_multiplier) - (400 * global.scale_multiplier))/2;	
+		draw_line(left_edge, 0, left_edge, room_height);
+		draw_line(right_edge, 0, right_edge, room_height);
+	}
+	
+	draw_set_color(c_white);	
 }

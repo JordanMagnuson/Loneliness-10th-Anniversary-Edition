@@ -1,22 +1,31 @@
-global.debug = false;
+global.debug = true;
+
+// Force objects into 4/3 aspect ratio at center of screen?
+// This will recreate the view from the original game (which was 400x300).
+// The challenge here is that we want the background to stretch all the way
+// accross the presumably 16/9 screen, but we want to keep the squares in the
+// 4/3 center area during level generation.
+// If we do this we need to keep the room width at 16/9 multiplier (e.g. 2.4 x 400)
+// but room height at a simple multiplier (e.g. 2 x 8000)
+global.force_objects_into_4_3 = true;
 
 // Resolution scale multiplier, relative to the original
 // flash game, which was 400x300 pixels, with 400x8000 game room.
 // This constant is used to scale the game sprites and
 // object locations during level building.
 // rm_game room dimensions still have to be set manually.
-global.scale_multiplier = 2.4;
-
-// Since we are converting from 400x300 to widescreen ratio, we need
-// to factor that in for x placement of objects when loading the level.
-// If scale_multiplier = 2, then we are converting from original width of 400px
-// to a new width of 960px, which means x_placement_multiplier = 2.4.
-//global.level_size_multiplier = 2.4;
+if (global.force_objects_into_4_3)
+	global.scale_multiplier = 2;
+else
+	global.scale_multiplier = 2.4;	// 2.4 x 400 = 960. A 16/9 ratio.
 
 // Camera.
 // Original game view size was 400x300.
-global.view_width_default = 400 * global.scale_multiplier ;
-global.view_height_default = 300 * global.scale_multiplier ;
+global.view_height_default = 300 * global.scale_multiplier;
+if (global.force_objects_into_4_3)
+	global.view_width_default = 400 * 2.4;
+else
+	global.view_width_default = 400 * global.scale_multiplier;
 
 // Player.
 // Default speed = 75; debug = 400

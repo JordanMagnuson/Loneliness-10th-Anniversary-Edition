@@ -1,6 +1,16 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_load_level(){	
+	// Force objects into 4/3 aspect ratio at center of screen? 
+	// Rather than using 16/9 ratio, where width would be multiple of 480.
+	// This will recreate the view from the original game (which was 400x300).
+	var x_offset = 0;
+	if (global.force_objects_into_4_3)
+		x_offset = ((480 * global.scale_multiplier) - (400 * global.scale_multiplier))/2;
+		
+	show_debug_message("x offset: " + string(x_offset));
+	
+	
 	// Load level from json data. 
 	// See helpful YouTube video: https://www.youtube.com/watch?v=CV1NWosuMqQ&t=329s
 	var level_data = json_decode(global.json_level_data);
@@ -16,7 +26,7 @@ function scr_load_level(){
 		var o = olist[| i];		// Equivalent to ds_list_find_value()
 		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
 		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
+		var rx = real(sx) * global.scale_multiplier + x_offset;
 		var ry = real(sy) * global.scale_multiplier;
 		instance_create_layer(rx, ry, "Others", obj_sitter)
   }	
@@ -28,7 +38,7 @@ function scr_load_level(){
 		var o = olist[| i];		// Equivalent to ds_list_find_value()
 		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
 		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
+		var rx = real(sx) * global.scale_multiplier + x_offset;
 		var ry = real(sy) * global.scale_multiplier;
 		instance_create_layer(rx, ry, "Others", obj_jumper)
   }		
@@ -40,7 +50,7 @@ function scr_load_level(){
 		var o = olist[| i];		// Equivalent to ds_list_find_value()
 		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
 		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
+		var rx = real(sx) * global.scale_multiplier + x_offset;
 		var ry = real(sy) * global.scale_multiplier;
 		instance_create_layer(rx, ry, "Others", obj_marcher)
   }			
@@ -52,7 +62,7 @@ function scr_load_level(){
 		var o = olist[| i];		// Equivalent to ds_list_find_value()
 		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
 		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
+		var rx = real(sx) * global.scale_multiplier + x_offset;
 		var ry = real(sy) * global.scale_multiplier;
 		instance_create_layer(rx, ry, "Others", obj_mixer_center)
   }		
@@ -63,7 +73,7 @@ function scr_load_level(){
 		var o = olist[| i];		// Equivalent to ds_list_find_value()
 		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
 		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
+		var rx = real(sx) * global.scale_multiplier + x_offset;
 		var ry = real(sy) * global.scale_multiplier;
 		instance_create_layer(rx, ry, "Others", obj_mixer)
   }	
@@ -75,7 +85,7 @@ function scr_load_level(){
 		var o = olist[| i];		// Equivalent to ds_list_find_value()
 		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
 		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
+		var rx = real(sx) * global.scale_multiplier + x_offset;
 		var ry = real(sy) * global.scale_multiplier;
 		instance_create_layer(rx, ry, "Others", obj_orbiter_center)
   }		
@@ -86,7 +96,7 @@ function scr_load_level(){
 		var o = olist[| i];		// Equivalent to ds_list_find_value()
 		var sx = o[? "x"];		// Equivalent to ds_map_find_value()
 		var sy = o[? "y"];
-		var rx = real(sx) * global.scale_multiplier;
+		var rx = real(sx) * global.scale_multiplier + x_offset;
 		var ry = real(sy) * global.scale_multiplier;
 		instance_create_layer(rx, ry, "Others", obj_orbiter)
   }		

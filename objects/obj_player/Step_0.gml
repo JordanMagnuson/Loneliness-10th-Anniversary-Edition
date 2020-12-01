@@ -3,7 +3,7 @@
 // Original formula: spdMax = ((y / MainWorld.height) * (SPEED_MAX * (1 / 3))) + (SPEED_MAX * (2 / 3));
 //mov_speed = global.player_speed;
 mov_speed = ((y / room_height) * (global.player_speed * (1 / 3))) + (global.player_speed * (2 / 3));
-show_debug_message("move speed: " + string(mov_speed));
+//show_debug_message("move speed: " + string(mov_speed));
 
 //show_debug_message("move speed: " + string(mov_speed));
 
