@@ -6,6 +6,7 @@ function scr_deacticate_instances(_notme){
 	instance_activate_object(obj_player);	
 	instance_activate_object(obj_camera);
 	instance_activate_object(obj_darkness_overlay);
+	instance_activate_object(obj_orientation_check);	
 	instance_activate_object(obj_fade_out_game);
 	var _top = obj_camera.y - obj_camera.view_height * 2;
 	var _height = obj_camera.view_height * 4;
