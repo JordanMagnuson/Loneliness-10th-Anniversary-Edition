@@ -2,9 +2,11 @@ scale_multiplier = global.scale_multiplier;
 opacity = 1;
 fading = false;
 
+speed_max = ((y / room_height) * (global.leaver_speed * (1 / 3))) + (global.leaver_speed * (2 / 3));
+
 // Run!
 direction = point_direction(x,y,obj_player.x,obj_player.y)+180;
-speed = global.leaver_speed;
+speed = speed_max;
 gravity = 0;
 alarm[0] = 1 * room_speed; // fade alarm.
  

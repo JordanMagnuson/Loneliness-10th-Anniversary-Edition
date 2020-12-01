@@ -10,8 +10,8 @@ sprite_width_real = sprite_width*scale_multiplier;
 //y = 7944 * global.scale_multiplier;
 
 x = room_width / 2;
-//y = room_height - (50 - global.scale_multiplier);
-y = global.view_height_default * 5;
+y = room_height - (50 - global.scale_multiplier);
+//y = global.view_height_default * 5;
 
 
 fade_out_started = false;
