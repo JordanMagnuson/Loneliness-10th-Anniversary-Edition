@@ -1,25 +1,26 @@
 // Initialize global variables.
 scr_globals();
 
-//// Initialize Game Analytics extension. 
-//if (global.game_analytics_enabled) {
-//	// Game version.
-//	ga_configureBuild(global.game_version);
+// Initialize Game Analytics extension. 
+// See https://gameanalytics.com/docs/item/gamemaker-sdk/
+if (global.game_analytics_enabled) {
+	// Game version.
+	ga_configureBuild(global.game_version);
 
-//	// Development settings - should be disabled in production builds!
-//	if (global.debug) {
-//		ga_setEnabledInfoLog(true);
-//		ga_setEnabledVerboseLog(true);
-//	}
+	// Development settings - should be disabled in production builds!
+	if (global.debug) {
+		ga_setEnabledInfoLog(true);
+		ga_setEnabledVerboseLog(true);
+	}
 
-//	// Initialize with game id and scret key. From GameAnalytics.com dashboard.
-//	ga_initialize("4f8f0bcb1f1c6d19d0de010b2b94ce51", "2e0920f85aee134932c40afb7604f75117bcbffb");
-//}
+	// Initialize with game id and scret key. From GameAnalytics.com dashboard.
+	ga_initialize("c842bee8613a24fcdd99476372f85329", "d0bd65f832b5ac2701f38f76d1cd4a3f82acb8e4");
+}
 
-//// Game Analytics - register this screen.
-//if (global.game_analytics_enabled) {
-//	ga_addProgressionEvent(GA_PROGRESSIONSTATUS_START, "start_screen");
-//}
+// Game Analytics - register this screen.
+if (global.game_analytics_enabled) {
+	ga_addProgressionEvent(GA_PROGRESSIONSTATUS_START, "title_screen");
+}
 
 window_set_cursor(cr_handpoint);
 

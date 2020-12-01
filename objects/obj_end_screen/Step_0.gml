@@ -30,3 +30,15 @@ if (global.is_browser && spr_follow_link && show_follow_txt) {
 		follow_link = clickable_add(0, 0, sprite_get_tpe(spr_follow_link, 0), url, "_blank", "");
 	}	
 }
+
+if (allow_quit) {	
+	if (keyboard_key_press(vk_anykey) || mouse_check_button_pressed(mb_any)) {
+		if (global.game_analytics_enabled) {
+			ga_addProgressionEvent(GA_PROGRESSIONSTATUS_COMPLETE, "end_screen");
+			ga_onQuit();						
+		}
+		if (!global.is_browser) {
+			game_end();
+		}
+	}
+}

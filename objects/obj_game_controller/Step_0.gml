@@ -7,3 +7,11 @@ if (!audio_music && audio_sound_is_playable(snd_music)) {
 }
 
 scr_deacticate_instances(true);
+
+// Analytics: track progress to mid level.
+if (global.game_analytics_enabled && obj_player.y < room_height/2 && !analytics_reached_mid_level) {
+
+	ga_addProgressionEvent(GA_PROGRESSIONSTATUS_COMPLETE, "level_start");
+	ga_addProgressionEvent(GA_PROGRESSIONSTATUS_START, "level_mid");
+	analytics_reached_mid_level = true;
+}

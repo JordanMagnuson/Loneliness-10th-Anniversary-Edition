@@ -1,4 +1,6 @@
 global.debug = false;
+global.game_analytics_enabled = true; // Whether game analytics are enabled and sending.
+global.game_version = "1.0.0";
 
 // Force objects into 4/3 aspect ratio at center of screen?
 // This will recreate the view from the original game (which was 400x300).
