@@ -1,8 +1,8 @@
 function scr_resize_title_screen() {
 	// Live coding with GMLive extension. See https://yal.cc/r/17/gmlive/
-	if (global.debug && live_call()) {
-		return live_result;
-	}	
+	//if (global.debug && live_call()) {
+	//	return live_result;
+	//}	
 
 	var w = browser_width;
 	var h = browser_height;
