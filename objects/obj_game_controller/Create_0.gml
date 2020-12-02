@@ -2,7 +2,7 @@
 scr_load_level();
 
 // Music not yet playing.
-audio_music = 0;
+global.audio_music = 0;
 
 // Player not yet reached midpoint.
 analytics_reached_mid_level = false;
