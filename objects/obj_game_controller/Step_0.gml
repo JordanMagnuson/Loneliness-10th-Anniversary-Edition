@@ -15,3 +15,10 @@ if (global.game_analytics_enabled && obj_player.y < room_height/2 && !analytics_
 	ga_addProgressionEvent(GA_PROGRESSIONSTATUS_START, "level_mid");
 	analytics_reached_mid_level = true;
 }
+
+// Quit game on pressing Esc key.
+if (!global.is_browser) {
+	if (keyboard_check_pressed(vk_escape)) {
+		game_end();
+	}
+}

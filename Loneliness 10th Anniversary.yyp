@@ -16,7 +16,7 @@
     {"id":{"name":"scr_level_data","path":"scripts/scr_level_data/scr_level_data.yy",},"order":1,},
     {"id":{"name":"scr_custom_collision_circle_list","path":"scripts/scr_custom_collision_circle_list/scr_custom_collision_circle_list.yy",},"order":5,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":1,},
-    {"id":{"name":"rm_end_screen","path":"rooms/rm_end_screen/rm_end_screen.yy",},"order":2,},
+    {"id":{"name":"rm_end_screen_browser","path":"rooms/rm_end_screen_browser/rm_end_screen_browser.yy",},"order":2,},
     {"id":{"name":"obj_gmlive","path":"objects/obj_gmlive/obj_gmlive.yy",},"order":2,},
     {"id":{"name":"obj_end_screen","path":"objects/obj_end_screen/obj_end_screen.yy",},"order":6,},
     {"id":{"name":"ga_addResourceEvent","path":"scripts/ga_addResourceEvent/ga_addResourceEvent.yy",},"order":4,},
@@ -100,7 +100,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
-    {"roomId":{"name":"rm_end_screen","path":"rooms/rm_end_screen/rm_end_screen.yy",},},
+    {"roomId":{"name":"rm_end_screen_browser","path":"rooms/rm_end_screen_browser/rm_end_screen_browser.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

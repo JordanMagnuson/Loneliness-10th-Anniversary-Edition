@@ -23,7 +23,7 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_35E9B13B","path":"rooms/rm_end_screen/rm_end_screen.yy",},
+    {"name":"inst_35E9B13B","path":"rooms/rm_end_screen_browser/rm_end_screen_browser.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -51,7 +51,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_end_screen",
+  "name": "rm_end_screen_browser",
   "tags": [],
   "resourceType": "GMRoom",
 }

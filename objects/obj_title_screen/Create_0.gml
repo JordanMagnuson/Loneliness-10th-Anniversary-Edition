@@ -24,6 +24,11 @@ if (global.game_analytics_enabled) {
 
 window_set_cursor(cr_handpoint);
 
+// If this is not a browser, skip the title screen completely.
+if (!global.is_browser) {
+	room_goto(rm_game);
+}
+
 //window_width = window_get_width();
 //width = sprite_get_width(spr_start_button)
 //x = window_get_x() + window_width/2 - width/2;
