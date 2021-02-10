@@ -7,6 +7,13 @@ global.audio_music = 0;
 // Player not yet reached midpoint.
 analytics_reached_mid_level = false;
 
+// Audio stuff.
+// Put here so that we could tell if/when music loops,
+// But not currently used for anythinng.
+MUSIC_LENGTH_MICROSECONDS = 116349000;
+time_since_music_loop = 0;
+music_looped_last_step = false;
+
 // Hide the cursor.
 window_set_cursor(cr_none);
 

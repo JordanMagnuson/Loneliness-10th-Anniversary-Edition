@@ -1,2 +1,2 @@
-/// @description Allow quit any key
-allow_quit_any_key = true;
+/// @description Auto quit.
+game_end();
