@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_other","path":"sprites/spr_other/spr_other.yy",},"order":1,},
     {"id":{"name":"ga_addProgressionEvent","path":"scripts/ga_addProgressionEvent/ga_addProgressionEvent.yy",},"order":3,},
+    {"id":{"name":"scr_load_gamepads","path":"scripts/scr_load_gamepads/scr_load_gamepads.yy",},"order":44,},
     {"id":{"name":"ga_onQuit","path":"scripts/ga_onQuit/ga_onQuit.yy",},"order":18,},
     {"id":{"name":"ga_onResume","path":"scripts/ga_onResume/ga_onResume.yy",},"order":19,},
     {"id":{"name":"obj_darkness_overlay","path":"objects/obj_darkness_overlay/obj_darkness_overlay.yy",},"order":5,},

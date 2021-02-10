@@ -69,6 +69,9 @@ function scr_globals() {
 	global.movement_inputs[5] = ord("W");
 	global.movement_inputs[6] = ord("A");
 	global.movement_inputs[7] = ord("S");
+	
+	// Gamepad input.
+	scr_load_gamepads();
 
 	// Is this a browser?
 	global.is_browser = true;

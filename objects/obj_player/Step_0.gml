@@ -21,6 +21,45 @@ for ( var i = 0; i < array_length_1d(global.movement_inputs); i++){
         move_yinput += lengthdir_y(1, this_angle);
     }
 }
+
+// Controller input.
+if (global.gamepad_input) {
+	for (var i = 0; i < global.gamepad_count; i++;) {
+		// Check if this controller is active/connected, then get input.
+		if (global.gp[i]) {
+			// DPad vertical.
+			if (gamepad_button_check(i, gp_padu)) {
+				move_yinput = -1;
+			}
+			else if (gamepad_button_check(i, gp_padd)) {
+				move_yinput = 1;
+			}
+			// DPad horizontal.
+			if (gamepad_button_check(i, gp_padl)) {
+				move_xinput = -1;
+			}
+			else if (gamepad_button_check(i, gp_padr)) {
+				move_xinput = 1;
+			}		
+		
+			// Left analog stick
+			if (move_yinput == 0)
+				move_yinput = gamepad_axis_value(i, gp_axislv);
+			if (move_xinput == 0)
+				move_xinput = gamepad_axis_value(i, gp_axislh);
+			
+			// Right analog stick
+			if (move_yinput == 0)
+				move_yinput = gamepad_axis_value(i, gp_axisrv);
+			if (move_xinput == 0)
+				move_xinput = gamepad_axis_value(i, gp_axisrh);		
+				
+			// Select button quits game.
+			if (gamepad_button_check(i, gp_select))
+				game_end();
+		}
+	}
+}
  
 var moving = ( point_distance(0,0,move_xinput,move_yinput) > 0 );
 
