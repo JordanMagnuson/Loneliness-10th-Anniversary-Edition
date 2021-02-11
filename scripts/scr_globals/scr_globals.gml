@@ -2,7 +2,10 @@ function scr_globals() {
 
 	global.debug = false;
 	global.game_analytics_enabled = true; // Whether game analytics are enabled and sending.
-	global.game_version = "2.0.1";
+	
+	// Game version. HTML5 builds should be 1.x.x and Windows builds should be 2.x.x
+	// (For tracking stats separately in GameAnalytics).
+	global.game_version = "2.0.2";
 
 	// Force objects into 4/3 aspect ratio at center of screen?
 	// This will recreate the view from the original game (which was 400x300).

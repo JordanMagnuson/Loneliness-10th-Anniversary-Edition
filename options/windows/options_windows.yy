@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Loneliness",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "2.0.1.0",
+  "option_windows_version": "2.0.2.0",
   "option_windows_company_info": "Jordan Magnuson",
   "option_windows_product_info": "Loneliness",
   "option_windows_copyright_info": "",
