@@ -30,7 +30,7 @@ if (global.game_analytics_enabled && obj_player.y < room_height/2 && !analytics_
 }
 
 // Quit game on pressing Esc key.
-if (!global.is_browser) {
+if (!global.is_browser && !global.gallery_build) {
 	if (keyboard_check_pressed(vk_escape)) {
 		game_end();
 	}

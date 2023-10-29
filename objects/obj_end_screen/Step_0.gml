@@ -37,7 +37,10 @@ if (allow_quit) {
 			ga_addProgressionEvent(GA_PROGRESSIONSTATUS_COMPLETE, "end_screen");
 			ga_onQuit();						
 		}
-		if (!global.is_browser) {
+		if (global.gallery_build) {
+			game_restart();
+		}
+		else if (!global.is_browser) {
 			game_end();
 		}
 	}

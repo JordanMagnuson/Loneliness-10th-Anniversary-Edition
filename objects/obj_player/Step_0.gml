@@ -55,7 +55,7 @@ if (global.gamepad_input) {
 				move_xinput = gamepad_axis_value(i, gp_axisrh);		
 				
 			// Select button quits game.
-			if (gamepad_button_check(i, gp_select))
+			if (gamepad_button_check(i, gp_select) and !global.gallery_build)
 				game_end();
 		}
 	}

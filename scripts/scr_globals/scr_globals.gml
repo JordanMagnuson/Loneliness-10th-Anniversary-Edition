@@ -2,7 +2,7 @@ function scr_globals() {
 
 	global.debug = false;
 	global.game_analytics_enabled = false; // Whether game analytics are enabled and sending.
-	global.gallery_build = true; // Whether to include title screen and auto-restart the game, for gallery settings.
+	global.gallery_build = true; // Whether to include gallery features like auto-restart.
 	
 	// Game version. HTML5 builds should be 1.x.x and Windows builds should be 2.x.x
 	// (For tracking stats separately in GameAnalytics).
@@ -38,11 +38,12 @@ function scr_globals() {
 	// Player.
 	// Default speed = 75; debug = 400
 	if (global.debug) {
-		global.player_speed = 400 * global.scale_multiplier; // Do I need to factor room_speed in here?
+		global.player_speed = 600 * global.scale_multiplier; // Do I need to factor room_speed in here?
 	}
 	else {
 		global.player_speed = 75 * global.scale_multiplier; // Do I need to factor room_speed in here?
 	}
+	global.received_first_input = false;
 	global.allow_input = true;
 	global.game_ending = false;
 	global.orientation_check_visible = false;
@@ -93,6 +94,14 @@ function scr_globals() {
 		default:
 			global.is_touch_device = false;
 			break;
+	}
+	
+	// Show end screen?
+	if (global.is_browser) {
+		global.show_end_screen = true;	
+	}
+	else {
+		global.show_end_screen = false;
 	}
 
 	// Get pixel ratio for this device. Allows us to utilize full resolution of

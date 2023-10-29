@@ -1,4 +1,4 @@
-if (time_since_last_interaction > time_till_restart - 7) {
+if (time_since_last_interaction > warning_time) {
 	draw_set_color(c_black);
 	draw_set_font(fnt_casual_encounter_big);
 	draw_set_halign(fa_center);

@@ -5,7 +5,7 @@ if (alpha < 1)
 
 if (alpha >= 1 && !fade_finished) {
 	// If browser, show browser end screen.
-	if (global.is_browser) {
+	if (global.show_end_screen) {
 		room_goto(rm_end_screen_browser);
 	}
 	

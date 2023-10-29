@@ -9,6 +9,9 @@ function scr_move(argument0, argument1) {
 	//if (global.debug && live_call()) {
 	//	return live_result;
 	//}	
+	
+	if (!global.received_first_input)
+		global.received_first_input = true;
 
 	var dist = argument0;
 	var dir = argument1;

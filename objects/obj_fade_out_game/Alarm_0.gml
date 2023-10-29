@@ -1,2 +1,5 @@
 /// @description Auto quit.
-game_end();
+if (global.gallery_build)
+	game_restart();
+else
+	game_end();
