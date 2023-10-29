@@ -1,4 +1,4 @@
-// Live coding with GMLive extension. See https://yal.cc/r/17/gmlive/
+ // Live coding with GMLive extension. See https://yal.cc/r/17/gmlive/
 //if (global.debug && live_call()) {
 //	return live_result;
 //}	

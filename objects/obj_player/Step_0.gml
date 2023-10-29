@@ -67,6 +67,7 @@ var moving = ( point_distance(0,0,move_xinput,move_yinput) > 0 );
 // Formula from original game: if (y <= FP.screen.height * 2.5) { force up }
 if (y <= obj_camera.view_height * 2.5) {
 	global.allow_input = false;
+	global.game_ending = true;
 	scr_move(move_distance, 90);
 }
 

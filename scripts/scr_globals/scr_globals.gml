@@ -1,7 +1,8 @@
 function scr_globals() {
 
 	global.debug = false;
-	global.game_analytics_enabled = true; // Whether game analytics are enabled and sending.
+	global.game_analytics_enabled = false; // Whether game analytics are enabled and sending.
+	global.gallery_build = true; // Whether to include title screen and auto-restart the game, for gallery settings.
 	
 	// Game version. HTML5 builds should be 1.x.x and Windows builds should be 2.x.x
 	// (For tracking stats separately in GameAnalytics).
@@ -43,6 +44,7 @@ function scr_globals() {
 		global.player_speed = 75 * global.scale_multiplier; // Do I need to factor room_speed in here?
 	}
 	global.allow_input = true;
+	global.game_ending = false;
 	global.orientation_check_visible = false;
 	global.fade_out_started = false;
 
