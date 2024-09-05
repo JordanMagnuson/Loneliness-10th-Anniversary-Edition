@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "GMLive",
-    "path": "folders/Extensions/GMLive.yy",
+  "$GMScript":"v1",
+  "%Name":"GMLiveAPI",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLiveAPI",
+  "parent":{
+    "name":"GMLive",
+    "path":"folders/Extensions/GMLive.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GMLiveAPI",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

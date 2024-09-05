@@ -1,135 +1,70 @@
 {
-  "optionsFile": "options.json",
-  "options": [],
-  "exportToGame": true,
-  "supportedTargets": 35184372089070,
-  "extensionVersion": "3.1.1",
-  "packageId": "",
-  "productId": "",
-  "author": "",
-  "date": "2017-08-18T02:12:48",
-  "license": "",
-  "description": "",
-  "helpfile": "",
-  "iosProps": true,
-  "tvosProps": false,
-  "androidProps": true,
-  "installdir": "",
-  "files": [
-    {"filename":"GameAnalytics.js","origname":"","init":"","final":"","kind":5,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":32,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"GameAnalyticsExt.ext","origname":"","init":"","final":"","kind":4,"uncompress":false,"functions":[],"constants":[
-        {"value":"1","hidden":false,"resourceVersion":"1.0","name":"GA_ERRORSEVERITY_DEBUG","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"2","hidden":false,"resourceVersion":"1.0","name":"GA_ERRORSEVERITY_INFO","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"3","hidden":false,"resourceVersion":"1.0","name":"GA_ERRORSEVERITY_WARNING","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"4","hidden":false,"resourceVersion":"1.0","name":"GA_ERRORSEVERITY_ERROR","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"5","hidden":false,"resourceVersion":"1.0","name":"GA_ERRORSEVERITY_CRITICAL","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"1","hidden":false,"resourceVersion":"1.0","name":"GA_RESOURCEFLOWTYPE_SOURCE","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"2","hidden":false,"resourceVersion":"1.0","name":"GA_RESOURCEFLOWTYPE_SINK","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"1","hidden":false,"resourceVersion":"1.0","name":"GA_PROGRESSIONSTATUS_START","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"2","hidden":false,"resourceVersion":"1.0","name":"GA_PROGRESSIONSTATUS_COMPLETE","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"3","hidden":false,"resourceVersion":"1.0","name":"GA_PROGRESSIONSTATUS_FAIL","tags":[],"resourceType":"GMExtensionConstant",},
-      ],"ProxyFiles":[],"copyToTargets":35184372089070,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"GameAnalyticsAndroid.ext","origname":"","init":"","final":"","kind":4,"uncompress":false,"functions":[
-        {"externalName":"addBusinessEventWithReceipt","kind":4,"help":"addBusinessEventWithReceiptAndroid(currency:string, amount:double, itemType:string, itemId:string, cartType:string, receipt:string, store:string, signature:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventWithReceiptAndroid","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledInfoLog","kind":4,"help":"setEnabledInfoLog_android(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledInfoLog_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledVerboseLog","kind":4,"help":"setEnabledVerboseLog_android(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledVerboseLog_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions01","kind":4,"help":"configureAvailableCustomDimensions01_android(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions01_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions02","kind":4,"help":"configureAvailableCustomDimensions02_android(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions02_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions03","kind":4,"help":"configureAvailableCustomDimensions03_android(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions03_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceCurrencies","kind":4,"help":"configureAvailableResourceCurrencies_android(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceCurrencies_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceItemTypes","kind":4,"help":"configureAvailableResourceItemTypes_android(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceItemTypes_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureBuild","kind":4,"help":"configureBuild_android(build:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureBuild_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureUserId","kind":4,"help":"configureUserId_android(id:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureUserId_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"initialize","kind":4,"help":"native_ga_initialize_android(key:string, secret:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"native_ga_initialize_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureSdkGameEngineVersion","kind":4,"help":"configureSdkGameEngineVersion_android(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureSdkGameEngineVersion_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureGameEngineVersion","kind":4,"help":"configureGameEngineVersion_android(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureGameEngineVersion_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEvent","kind":4,"help":"addProgressionEvent_android(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEvent_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEvent","kind":4,"help":"addDesignEvent_android(eventId:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addDesignEvent_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEventWithValue","kind":4,"help":"addDesignEventWithValue_android(eventId:string, value:double)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"addDesignEventWithValue_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addErrorEvent","kind":4,"help":"addErrorEvent_android(severity:double, message:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"addErrorEvent_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledManualSessionHandling","kind":4,"help":"setEnabledManualSessionHandling_android(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledManualSessionHandling_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension01","kind":4,"help":"setCustomDimension01_android(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension01_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension02","kind":4,"help":"setCustomDimension02_android(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension02_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension03","kind":4,"help":"setCustomDimension03_android(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension03_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"startSession","kind":4,"help":"startSession_android()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"startSession_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"endSession","kind":4,"help":"endSession_android()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"endSession_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addBusinessEventJson","kind":4,"help":"addBusinessEventJson_android(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventJson_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addResourceEventJson","kind":4,"help":"addResourceEventJson_android(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addResourceEventJson_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEventWithScoreJson","kind":4,"help":"addProgressionEventWithScoreJson_android(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEventWithScoreJson_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsString","kind":4,"help":"getRemoteConfigsValueAsString_android(key:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsString_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsStringWithDefaultValue","kind":4,"help":"getRemoteConfigsValueAsStringWithDefaultValue_android(key:string, defaultValue:string","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsStringWithDefaultValue_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"isRemoteConfigsReady","kind":4,"help":"isRemoteConfigsReady_android()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"isRemoteConfigsReady_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsContentAsString","kind":4,"help":"getRemoteConfigsContentAsString_android()","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"getRemoteConfigsContentAsString_android","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledEventSubmission","kind":4,"help":"setEnabledEventSubmission_android(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledEventSubmission_android","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":8,"order":[
+  "$GMExtension":"",
+  "%Name":"GameAnalyticsExt",
+  "androidactivityinject":"",
+  "androidclassname":"GameAnalyticsExt",
+  "androidcodeinjection":"",
+  "androidinject":"",
+  "androidmanifestinject":"",
+  "androidPermissions":[
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE",
+  ],
+  "androidProps":true,
+  "androidsourcedir":"",
+  "author":"",
+  "classname":"GameAnalyticsExt",
+  "copyToTargets":35184372089070,
+  "description":"",
+  "exportToGame":true,
+  "extensionVersion":"3.1.1",
+  "files":[
+    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":32,"filename":"GameAnalytics.js","final":"","functions":[],"init":"","kind":5,"name":"","order":[],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"","%Name":"","constants":[
+        {"$GMExtensionConstant":"","%Name":"GA_ERRORSEVERITY_DEBUG","hidden":false,"name":"GA_ERRORSEVERITY_DEBUG","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"1",},
+        {"$GMExtensionConstant":"","%Name":"GA_ERRORSEVERITY_INFO","hidden":false,"name":"GA_ERRORSEVERITY_INFO","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"2",},
+        {"$GMExtensionConstant":"","%Name":"GA_ERRORSEVERITY_WARNING","hidden":false,"name":"GA_ERRORSEVERITY_WARNING","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"3",},
+        {"$GMExtensionConstant":"","%Name":"GA_ERRORSEVERITY_ERROR","hidden":false,"name":"GA_ERRORSEVERITY_ERROR","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"4",},
+        {"$GMExtensionConstant":"","%Name":"GA_ERRORSEVERITY_CRITICAL","hidden":false,"name":"GA_ERRORSEVERITY_CRITICAL","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"5",},
+        {"$GMExtensionConstant":"","%Name":"GA_RESOURCEFLOWTYPE_SOURCE","hidden":false,"name":"GA_RESOURCEFLOWTYPE_SOURCE","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"1",},
+        {"$GMExtensionConstant":"","%Name":"GA_RESOURCEFLOWTYPE_SINK","hidden":false,"name":"GA_RESOURCEFLOWTYPE_SINK","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"2",},
+        {"$GMExtensionConstant":"","%Name":"GA_PROGRESSIONSTATUS_START","hidden":false,"name":"GA_PROGRESSIONSTATUS_START","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"1",},
+        {"$GMExtensionConstant":"","%Name":"GA_PROGRESSIONSTATUS_COMPLETE","hidden":false,"name":"GA_PROGRESSIONSTATUS_COMPLETE","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"2",},
+        {"$GMExtensionConstant":"","%Name":"GA_PROGRESSIONSTATUS_FAIL","hidden":false,"name":"GA_PROGRESSIONSTATUS_FAIL","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"3",},
+      ],"copyToTargets":35184372089070,"filename":"GameAnalyticsExt.ext","final":"","functions":[],"init":"","kind":4,"name":"","order":[],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":8,"filename":"GameAnalyticsAndroid.ext","final":"","functions":[
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventWithReceiptAndroid","argCount":0,"args":[1,2,1,1,1,1,1,1,],"documentation":"","externalName":"addBusinessEventWithReceipt","help":"addBusinessEventWithReceiptAndroid(currency:string, amount:double, itemType:string, itemId:string, cartType:string, receipt:string, store:string, signature:string)","hidden":false,"kind":4,"name":"addBusinessEventWithReceiptAndroid","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledInfoLog_android","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledInfoLog","help":"setEnabledInfoLog_android(flag:bool)","hidden":false,"kind":4,"name":"setEnabledInfoLog_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledVerboseLog_android","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledVerboseLog","help":"setEnabledVerboseLog_android(flag:bool)","hidden":false,"kind":4,"name":"setEnabledVerboseLog_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions01_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions01","help":"configureAvailableCustomDimensions01_android(json:string)","hidden":false,"kind":4,"name":"configureAvailableCustomDimensions01_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions02_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions02","help":"configureAvailableCustomDimensions02_android(json:string)","hidden":false,"kind":4,"name":"configureAvailableCustomDimensions02_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions03_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions03","help":"configureAvailableCustomDimensions03_android(json:string)","hidden":false,"kind":4,"name":"configureAvailableCustomDimensions03_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceCurrencies_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceCurrencies","help":"configureAvailableResourceCurrencies_android(json:string)","hidden":false,"kind":4,"name":"configureAvailableResourceCurrencies_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceItemTypes_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceItemTypes","help":"configureAvailableResourceItemTypes_android(json:string)","hidden":false,"kind":4,"name":"configureAvailableResourceItemTypes_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureBuild_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureBuild","help":"configureBuild_android(build:string)","hidden":false,"kind":4,"name":"configureBuild_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureUserId_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureUserId","help":"configureUserId_android(id:string)","hidden":false,"kind":4,"name":"configureUserId_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"native_ga_initialize_android","argCount":0,"args":[1,1,],"documentation":"","externalName":"initialize","help":"native_ga_initialize_android(key:string, secret:string)","hidden":false,"kind":4,"name":"native_ga_initialize_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureSdkGameEngineVersion_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureSdkGameEngineVersion","help":"configureSdkGameEngineVersion_android(version:string)","hidden":false,"kind":4,"name":"configureSdkGameEngineVersion_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureGameEngineVersion_android","argCount":0,"args":[1,],"documentation":"","externalName":"configureGameEngineVersion","help":"configureGameEngineVersion_android(version:string)","hidden":false,"kind":4,"name":"configureGameEngineVersion_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEvent_android","argCount":0,"args":[2,1,1,1,],"documentation":"","externalName":"addProgressionEvent","help":"addProgressionEvent_android(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"kind":4,"name":"addProgressionEvent_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEvent_android","argCount":0,"args":[1,],"documentation":"","externalName":"addDesignEvent","help":"addDesignEvent_android(eventId:string)","hidden":false,"kind":4,"name":"addDesignEvent_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEventWithValue_android","argCount":0,"args":[1,2,],"documentation":"","externalName":"addDesignEventWithValue","help":"addDesignEventWithValue_android(eventId:string, value:double)","hidden":false,"kind":4,"name":"addDesignEventWithValue_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addErrorEvent_android","argCount":0,"args":[2,1,],"documentation":"","externalName":"addErrorEvent","help":"addErrorEvent_android(severity:double, message:string)","hidden":false,"kind":4,"name":"addErrorEvent_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledManualSessionHandling_android","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledManualSessionHandling","help":"setEnabledManualSessionHandling_android(flag:bool)","hidden":false,"kind":4,"name":"setEnabledManualSessionHandling_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension01_android","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension01","help":"setCustomDimension01_android(dimension:string)","hidden":false,"kind":4,"name":"setCustomDimension01_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension02_android","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension02","help":"setCustomDimension02_android(dimension:string)","hidden":false,"kind":4,"name":"setCustomDimension02_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension03_android","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension03","help":"setCustomDimension03_android(dimension:string)","hidden":false,"kind":4,"name":"setCustomDimension03_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"startSession_android","argCount":0,"args":[],"documentation":"","externalName":"startSession","help":"startSession_android()","hidden":false,"kind":4,"name":"startSession_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"endSession_android","argCount":0,"args":[],"documentation":"","externalName":"endSession","help":"endSession_android()","hidden":false,"kind":4,"name":"endSession_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventJson_android","argCount":0,"args":[1,],"documentation":"","externalName":"addBusinessEventJson","help":"addBusinessEventJson_android(json:string)","hidden":false,"kind":4,"name":"addBusinessEventJson_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addResourceEventJson_android","argCount":0,"args":[1,],"documentation":"","externalName":"addResourceEventJson","help":"addResourceEventJson_android(json:string)","hidden":false,"kind":4,"name":"addResourceEventJson_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEventWithScoreJson_android","argCount":0,"args":[1,],"documentation":"","externalName":"addProgressionEventWithScoreJson","help":"addProgressionEventWithScoreJson_android(json:string)","hidden":false,"kind":4,"name":"addProgressionEventWithScoreJson_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsString_android","argCount":0,"args":[1,],"documentation":"","externalName":"getRemoteConfigsValueAsString","help":"getRemoteConfigsValueAsString_android(key:string)","hidden":false,"kind":4,"name":"getRemoteConfigsValueAsString_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsStringWithDefaultValue_android","argCount":0,"args":[1,1,],"documentation":"","externalName":"getRemoteConfigsValueAsStringWithDefaultValue","help":"getRemoteConfigsValueAsStringWithDefaultValue_android(key:string, defaultValue:string","hidden":false,"kind":4,"name":"getRemoteConfigsValueAsStringWithDefaultValue_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"isRemoteConfigsReady_android","argCount":0,"args":[],"documentation":"","externalName":"isRemoteConfigsReady","help":"isRemoteConfigsReady_android()","hidden":false,"kind":4,"name":"isRemoteConfigsReady_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsContentAsString_android","argCount":0,"args":[],"documentation":"","externalName":"getRemoteConfigsContentAsString","help":"getRemoteConfigsContentAsString_android()","hidden":false,"kind":4,"name":"getRemoteConfigsContentAsString_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledEventSubmission_android","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledEventSubmission","help":"setEnabledEventSubmission_android(flag:bool)","hidden":false,"kind":4,"name":"setEnabledEventSubmission_android","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+      ],"init":"","kind":4,"name":"","order":[
         {"name":"addBusinessEventWithReceiptAndroid","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledInfoLog_android","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledVerboseLog_android","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
@@ -161,111 +96,41 @@
         {"name":"isRemoteConfigsReady_android","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"getRemoteConfigsContentAsString_android","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledEventSubmission_android","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"GameAnalyticsIOS.ext","origname":"","init":"","final":"","kind":4,"uncompress":false,"functions":[
-        {"externalName":"addBusinessEventWithReceipt","kind":4,"help":"addBusinessEventWithReceiptIOS(currency:string, amount:double, itemType:string, itemId:string, cartType:string, receipt:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-            1,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventWithReceiptIOS","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addBusinessEventAndAutoFetchReceipt","kind":4,"help":"addBusinessEventAndAutoFetchReceipt(currency:string, amount:double, itemType:string, itemId:string, cartType:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventAndAutoFetchReceipt","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledInfoLog","kind":4,"help":"setEnabledInfoLog_ios(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledInfoLog_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledVerboseLog","kind":4,"help":"setEnabledVerboseLog_ios(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledVerboseLog_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions01","kind":4,"help":"configureAvailableCustomDimensions01_ios(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions01_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions02","kind":4,"help":"configureAvailableCustomDimensions01_ios(json:string)","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions02_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions03","kind":4,"help":"configureAvailableCustomDimensions03_ios(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions03_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceCurrencies","kind":4,"help":"configureAvailableResourceCurrencies_ios(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceCurrencies_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceItemTypes","kind":4,"help":"configureAvailableResourceItemTypes_ios(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceItemTypes_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureBuild","kind":4,"help":"configureBuild_ios(build:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureBuild_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureUserId","kind":4,"help":"configureUserId_ios(id:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureUserId_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"initialize","kind":4,"help":"native_ga_initialize_ios(key:string, secret:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"native_ga_initialize_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureSdkGameEngineVersion","kind":4,"help":"configureSdkGameEngineVersion_ios(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureSdkGameEngineVersion_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureGameEngineVersion","kind":4,"help":"configureGameEngineVersion_ios(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureGameEngineVersion_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEvent","kind":4,"help":"addProgressionEvent_ios(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEvent_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEvent","kind":4,"help":"addDesignEvent_ios(eventId:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addDesignEvent_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEventWithValue","kind":4,"help":"addDesignEventWithValue_ios(eventId:string, value:double)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"addDesignEventWithValue_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addErrorEvent","kind":4,"help":"addErrorEvent_ios(severity:double, message:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"addErrorEvent_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledManualSessionHandling","kind":4,"help":"setEnabledManualSessionHandling_ios(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledManualSessionHandling_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension01","kind":4,"help":"setCustomDimension01_ios(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension01_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension02","kind":4,"help":"setCustomDimension02_ios(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension02_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension03","kind":4,"help":"setCustomDimension03_ios(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension03_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"startSession","kind":4,"help":"startSession_ios()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"startSession_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"endSession","kind":4,"help":"endSession_ios()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"endSession_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addBusinessEventJson","kind":4,"help":"addBusinessEventJson_ios(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventJson_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addResourceEventJson","kind":4,"help":"addResourceEventJson_ios(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addResourceEventJson_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEventWithScoreJson","kind":4,"help":"addProgressionEventWithScoreJson_ios(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEventWithScoreJson_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsString","kind":4,"help":"getRemoteConfigsValueAsString_ios(key:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsString_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsStringWithDefaultValue","kind":4,"help":"getRemoteConfigsValueAsStringWithDefaultValue_ios(key:string, defaultValue:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsStringWithDefaultValue_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"isRemoteConfigsReady","kind":4,"help":"isRemoteConfigsReady_ios()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"isRemoteConfigsReady_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsContentAsString","kind":4,"help":"getRemoteConfigsContentAsString_ios()","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"getRemoteConfigsContentAsString_ios","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledEventSubmission","kind":4,"help":"setEnabledManualSessionHandling_ios(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledEventSubmission_ios","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":4,"order":[
+      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":4,"filename":"GameAnalyticsIOS.ext","final":"","functions":[
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventWithReceiptIOS","argCount":0,"args":[1,2,1,1,1,1,],"documentation":"","externalName":"addBusinessEventWithReceipt","help":"addBusinessEventWithReceiptIOS(currency:string, amount:double, itemType:string, itemId:string, cartType:string, receipt:string)","hidden":false,"kind":4,"name":"addBusinessEventWithReceiptIOS","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventAndAutoFetchReceipt","argCount":0,"args":[1,2,1,1,1,],"documentation":"","externalName":"addBusinessEventAndAutoFetchReceipt","help":"addBusinessEventAndAutoFetchReceipt(currency:string, amount:double, itemType:string, itemId:string, cartType:string)","hidden":false,"kind":4,"name":"addBusinessEventAndAutoFetchReceipt","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledInfoLog_ios","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledInfoLog","help":"setEnabledInfoLog_ios(flag:bool)","hidden":false,"kind":4,"name":"setEnabledInfoLog_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledVerboseLog_ios","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledVerboseLog","help":"setEnabledVerboseLog_ios(flag:bool)","hidden":false,"kind":4,"name":"setEnabledVerboseLog_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions01_ios","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions01","help":"configureAvailableCustomDimensions01_ios(json:string)","hidden":false,"kind":4,"name":"configureAvailableCustomDimensions01_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions02_ios","argCount":0,"args":[],"documentation":"","externalName":"configureAvailableCustomDimensions02","help":"configureAvailableCustomDimensions01_ios(json:string)","hidden":false,"kind":4,"name":"configureAvailableCustomDimensions02_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions03_ios","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions03","help":"configureAvailableCustomDimensions03_ios(json:string)","hidden":false,"kind":4,"name":"configureAvailableCustomDimensions03_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceCurrencies_ios","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceCurrencies","help":"configureAvailableResourceCurrencies_ios(json:string)","hidden":false,"kind":4,"name":"configureAvailableResourceCurrencies_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceItemTypes_ios","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceItemTypes","help":"configureAvailableResourceItemTypes_ios(json:string)","hidden":false,"kind":4,"name":"configureAvailableResourceItemTypes_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureBuild_ios","argCount":0,"args":[1,],"documentation":"","externalName":"configureBuild","help":"configureBuild_ios(build:string)","hidden":false,"kind":4,"name":"configureBuild_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureUserId_ios","argCount":0,"args":[1,],"documentation":"","externalName":"configureUserId","help":"configureUserId_ios(id:string)","hidden":false,"kind":4,"name":"configureUserId_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"native_ga_initialize_ios","argCount":0,"args":[1,1,],"documentation":"","externalName":"initialize","help":"native_ga_initialize_ios(key:string, secret:string)","hidden":false,"kind":4,"name":"native_ga_initialize_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureSdkGameEngineVersion_ios","argCount":0,"args":[1,],"documentation":"","externalName":"configureSdkGameEngineVersion","help":"configureSdkGameEngineVersion_ios(version:string)","hidden":false,"kind":4,"name":"configureSdkGameEngineVersion_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureGameEngineVersion_ios","argCount":0,"args":[1,],"documentation":"","externalName":"configureGameEngineVersion","help":"configureGameEngineVersion_ios(version:string)","hidden":false,"kind":4,"name":"configureGameEngineVersion_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEvent_ios","argCount":0,"args":[2,1,1,1,],"documentation":"","externalName":"addProgressionEvent","help":"addProgressionEvent_ios(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"kind":4,"name":"addProgressionEvent_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEvent_ios","argCount":0,"args":[1,],"documentation":"","externalName":"addDesignEvent","help":"addDesignEvent_ios(eventId:string)","hidden":false,"kind":4,"name":"addDesignEvent_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEventWithValue_ios","argCount":0,"args":[1,2,],"documentation":"","externalName":"addDesignEventWithValue","help":"addDesignEventWithValue_ios(eventId:string, value:double)","hidden":false,"kind":4,"name":"addDesignEventWithValue_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addErrorEvent_ios","argCount":0,"args":[2,1,],"documentation":"","externalName":"addErrorEvent","help":"addErrorEvent_ios(severity:double, message:string)","hidden":false,"kind":4,"name":"addErrorEvent_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledManualSessionHandling_ios","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledManualSessionHandling","help":"setEnabledManualSessionHandling_ios(flag:bool)","hidden":false,"kind":4,"name":"setEnabledManualSessionHandling_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension01_ios","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension01","help":"setCustomDimension01_ios(dimension:string)","hidden":false,"kind":4,"name":"setCustomDimension01_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension02_ios","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension02","help":"setCustomDimension02_ios(dimension:string)","hidden":false,"kind":4,"name":"setCustomDimension02_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension03_ios","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension03","help":"setCustomDimension03_ios(dimension:string)","hidden":false,"kind":4,"name":"setCustomDimension03_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"startSession_ios","argCount":0,"args":[],"documentation":"","externalName":"startSession","help":"startSession_ios()","hidden":false,"kind":4,"name":"startSession_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"endSession_ios","argCount":0,"args":[],"documentation":"","externalName":"endSession","help":"endSession_ios()","hidden":false,"kind":4,"name":"endSession_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventJson_ios","argCount":0,"args":[1,],"documentation":"","externalName":"addBusinessEventJson","help":"addBusinessEventJson_ios(json:string)","hidden":false,"kind":4,"name":"addBusinessEventJson_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addResourceEventJson_ios","argCount":0,"args":[1,],"documentation":"","externalName":"addResourceEventJson","help":"addResourceEventJson_ios(json:string)","hidden":false,"kind":4,"name":"addResourceEventJson_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEventWithScoreJson_ios","argCount":0,"args":[1,],"documentation":"","externalName":"addProgressionEventWithScoreJson","help":"addProgressionEventWithScoreJson_ios(json:string)","hidden":false,"kind":4,"name":"addProgressionEventWithScoreJson_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsString_ios","argCount":0,"args":[1,],"documentation":"","externalName":"getRemoteConfigsValueAsString","help":"getRemoteConfigsValueAsString_ios(key:string)","hidden":false,"kind":4,"name":"getRemoteConfigsValueAsString_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsStringWithDefaultValue_ios","argCount":0,"args":[1,1,],"documentation":"","externalName":"getRemoteConfigsValueAsStringWithDefaultValue","help":"getRemoteConfigsValueAsStringWithDefaultValue_ios(key:string, defaultValue:string)","hidden":false,"kind":4,"name":"getRemoteConfigsValueAsStringWithDefaultValue_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"isRemoteConfigsReady_ios","argCount":0,"args":[],"documentation":"","externalName":"isRemoteConfigsReady","help":"isRemoteConfigsReady_ios()","hidden":false,"kind":4,"name":"isRemoteConfigsReady_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsContentAsString_ios","argCount":0,"args":[],"documentation":"","externalName":"getRemoteConfigsContentAsString","help":"getRemoteConfigsContentAsString_ios()","hidden":false,"kind":4,"name":"getRemoteConfigsContentAsString_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledEventSubmission_ios","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledEventSubmission","help":"setEnabledManualSessionHandling_ios(flag:bool)","hidden":false,"kind":4,"name":"setEnabledEventSubmission_ios","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+      ],"init":"","kind":4,"name":"","order":[
         {"name":"addBusinessEventWithReceiptIOS","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"addBusinessEventAndAutoFetchReceipt","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledInfoLog_ios","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
@@ -298,100 +163,41 @@
         {"name":"isRemoteConfigsReady_ios","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"getRemoteConfigsContentAsString_ios","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledEventSubmission_ios","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"GameAnalyticsExt.js","origname":"","init":"","final":"","kind":5,"uncompress":false,"functions":[
-        {"externalName":"setEnabledInfoLog","kind":5,"help":"setEnabledInfoLog_html(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledInfoLog_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledVerboseLog","kind":5,"help":"setEnabledVerboseLog_html(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledVerboseLog_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions01","kind":5,"help":"configureAvailableCustomDimensions01_html(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions01_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions02","kind":5,"help":"configureAvailableCustomDimensions02_html(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions02_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions03","kind":5,"help":"configureAvailableCustomDimensions03_html(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions03_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceCurrencies","kind":5,"help":"configureAvailableResourceCurrencies_html(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceCurrencies_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceItemTypes","kind":5,"help":"configureAvailableResourceItemTypes(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceItemTypes_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureBuild","kind":5,"help":"configureBuild_html(build:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"configureBuild_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureUserId","kind":5,"help":"configureUserId(id:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureUserId_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"initialize","kind":5,"help":"native_ga_initialize_html(key:string, secret:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"native_ga_initialize_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureSdkGameEngineVersion","kind":5,"help":"configureSdkGameEngineVersion_html(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureSdkGameEngineVersion_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureGameEngineVersion","kind":5,"help":"configureGameEngineVersion_html(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureGameEngineVersion_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEvent","kind":5,"help":"addProgressionEvent_html(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEvent_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEvent","kind":5,"help":"addDesignEvent_html(eventId:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addDesignEvent_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEventWithValue","kind":5,"help":"addDesignEventWithValue(eventId:string, value:double)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"addDesignEventWithValue_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addErrorEvent","kind":5,"help":"addErrorEvent_html(severity:double, message:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"addErrorEvent_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledManualSessionHandling","kind":5,"help":"setEnabledManualSessionHandling_html(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledManualSessionHandling_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension01","kind":5,"help":"setCustomDimension01_html(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension01_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension02","kind":5,"help":"setCustomDimension02_html(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension02_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension03","kind":5,"help":"setCustomDimension03_html(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension03_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"startSession","kind":5,"help":"startSession_html()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"startSession_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"endSession","kind":5,"help":"endSession_html()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"endSession_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onStop","kind":5,"help":"onStop_html()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onStop_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onResume","kind":5,"help":"onResume_html()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onResume_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addBusinessEventJson","kind":5,"help":"addBusinessEventJson_html(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventJson_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addResourceEventJson","kind":5,"help":"addResourceEventJson_html(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addResourceEventJson_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEventWithScoreJson","kind":5,"help":"addProgressionEventWithScoreJson_html(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEventWithScoreJson_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsString","kind":5,"help":"getRemoteConfigsValueAsString_html(key:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsString_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsStringWithDefaultValue","kind":5,"help":"getRemoteConfigsValueAsStringWithDefaultValue_html(key:string, defaultValue:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsStringWithDefaultValue_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"isRemoteConfigsReady","kind":5,"help":"isRemoteConfigsReady_html()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"isRemoteConfigsReady_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsContentAsString","kind":5,"help":"getRemoteConfigsContentAsString_html()","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"getRemoteConfigsContentAsString_html","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledEventSubmission","kind":5,"help":"setEnabledEventSubmission_html(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledEventSubmission_html","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":32,"order":[
+      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":32,"filename":"GameAnalyticsExt.js","final":"","functions":[
+        {"$GMExtensionFunction":"","%Name":"setEnabledInfoLog_html","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledInfoLog","help":"setEnabledInfoLog_html(flag:bool)","hidden":false,"kind":5,"name":"setEnabledInfoLog_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledVerboseLog_html","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledVerboseLog","help":"setEnabledVerboseLog_html(flag:bool)","hidden":false,"kind":5,"name":"setEnabledVerboseLog_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions01_html","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions01","help":"configureAvailableCustomDimensions01_html(json:string)","hidden":false,"kind":5,"name":"configureAvailableCustomDimensions01_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions02_html","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions02","help":"configureAvailableCustomDimensions02_html(json:string)","hidden":false,"kind":5,"name":"configureAvailableCustomDimensions02_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions03_html","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions03","help":"configureAvailableCustomDimensions03_html(json:string)","hidden":false,"kind":5,"name":"configureAvailableCustomDimensions03_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceCurrencies_html","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceCurrencies","help":"configureAvailableResourceCurrencies_html(json:string)","hidden":false,"kind":5,"name":"configureAvailableResourceCurrencies_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceItemTypes_html","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceItemTypes","help":"configureAvailableResourceItemTypes(json:string)","hidden":false,"kind":5,"name":"configureAvailableResourceItemTypes_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureBuild_html","argCount":0,"args":[2,],"documentation":"","externalName":"configureBuild","help":"configureBuild_html(build:string)","hidden":false,"kind":5,"name":"configureBuild_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"configureUserId_html","argCount":0,"args":[1,],"documentation":"","externalName":"configureUserId","help":"configureUserId(id:string)","hidden":false,"kind":5,"name":"configureUserId_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"native_ga_initialize_html","argCount":0,"args":[1,1,],"documentation":"","externalName":"initialize","help":"native_ga_initialize_html(key:string, secret:string)","hidden":false,"kind":5,"name":"native_ga_initialize_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureSdkGameEngineVersion_html","argCount":0,"args":[1,],"documentation":"","externalName":"configureSdkGameEngineVersion","help":"configureSdkGameEngineVersion_html(version:string)","hidden":false,"kind":5,"name":"configureSdkGameEngineVersion_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureGameEngineVersion_html","argCount":0,"args":[1,],"documentation":"","externalName":"configureGameEngineVersion","help":"configureGameEngineVersion_html(version:string)","hidden":false,"kind":5,"name":"configureGameEngineVersion_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEvent_html","argCount":0,"args":[2,1,1,1,],"documentation":"","externalName":"addProgressionEvent","help":"addProgressionEvent_html(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"kind":5,"name":"addProgressionEvent_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEvent_html","argCount":0,"args":[1,],"documentation":"","externalName":"addDesignEvent","help":"addDesignEvent_html(eventId:string)","hidden":false,"kind":5,"name":"addDesignEvent_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEventWithValue_html","argCount":0,"args":[1,2,],"documentation":"","externalName":"addDesignEventWithValue","help":"addDesignEventWithValue(eventId:string, value:double)","hidden":false,"kind":5,"name":"addDesignEventWithValue_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addErrorEvent_html","argCount":0,"args":[2,1,],"documentation":"","externalName":"addErrorEvent","help":"addErrorEvent_html(severity:double, message:string)","hidden":false,"kind":5,"name":"addErrorEvent_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledManualSessionHandling_html","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledManualSessionHandling","help":"setEnabledManualSessionHandling_html(flag:bool)","hidden":false,"kind":5,"name":"setEnabledManualSessionHandling_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension01_html","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension01","help":"setCustomDimension01_html(dimension:string)","hidden":false,"kind":5,"name":"setCustomDimension01_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension02_html","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension02","help":"setCustomDimension02_html(dimension:string)","hidden":false,"kind":5,"name":"setCustomDimension02_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension03_html","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension03","help":"setCustomDimension03_html(dimension:string)","hidden":false,"kind":5,"name":"setCustomDimension03_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"startSession_html","argCount":0,"args":[],"documentation":"","externalName":"startSession","help":"startSession_html()","hidden":false,"kind":5,"name":"startSession_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"endSession_html","argCount":0,"args":[],"documentation":"","externalName":"endSession","help":"endSession_html()","hidden":false,"kind":5,"name":"endSession_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onStop_html","argCount":0,"args":[],"documentation":"","externalName":"onStop","help":"onStop_html()","hidden":false,"kind":5,"name":"onStop_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onResume_html","argCount":0,"args":[],"documentation":"","externalName":"onResume","help":"onResume_html()","hidden":false,"kind":5,"name":"onResume_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventJson_html","argCount":0,"args":[1,],"documentation":"","externalName":"addBusinessEventJson","help":"addBusinessEventJson_html(json:string)","hidden":false,"kind":5,"name":"addBusinessEventJson_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addResourceEventJson_html","argCount":0,"args":[1,],"documentation":"","externalName":"addResourceEventJson","help":"addResourceEventJson_html(json:string)","hidden":false,"kind":5,"name":"addResourceEventJson_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEventWithScoreJson_html","argCount":0,"args":[1,],"documentation":"","externalName":"addProgressionEventWithScoreJson","help":"addProgressionEventWithScoreJson_html(json:string)","hidden":false,"kind":5,"name":"addProgressionEventWithScoreJson_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsString_html","argCount":0,"args":[1,],"documentation":"","externalName":"getRemoteConfigsValueAsString","help":"getRemoteConfigsValueAsString_html(key:string)","hidden":false,"kind":5,"name":"getRemoteConfigsValueAsString_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsStringWithDefaultValue_html","argCount":0,"args":[1,1,],"documentation":"","externalName":"getRemoteConfigsValueAsStringWithDefaultValue","help":"getRemoteConfigsValueAsStringWithDefaultValue_html(key:string, defaultValue:string)","hidden":false,"kind":5,"name":"getRemoteConfigsValueAsStringWithDefaultValue_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"isRemoteConfigsReady_html","argCount":0,"args":[],"documentation":"","externalName":"isRemoteConfigsReady","help":"isRemoteConfigsReady_html()","hidden":false,"kind":5,"name":"isRemoteConfigsReady_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsContentAsString_html","argCount":0,"args":[],"documentation":"","externalName":"getRemoteConfigsContentAsString","help":"getRemoteConfigsContentAsString_html()","hidden":false,"kind":5,"name":"getRemoteConfigsContentAsString_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledEventSubmission_html","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledEventSubmission","help":"setEnabledEventSubmission_html(flag:bool)","hidden":false,"kind":5,"name":"setEnabledEventSubmission_html","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+      ],"init":"","kind":5,"name":"","order":[
         {"name":"setEnabledInfoLog_html","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledVerboseLog_html","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"configureAvailableCustomDimensions01_html","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
@@ -424,99 +230,42 @@
         {"name":"isRemoteConfigsReady_html","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"getRemoteConfigsContentAsString_html","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledEventSubmission_html","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"libGameAnalytics.dylib","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
-        {"externalName":"setEnabledInfoLog","kind":1,"help":"setEnabledInfoLog_mac(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledInfoLog_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledVerboseLog","kind":1,"help":"setEnabledVerboseLog_mac(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledVerboseLog_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions01","kind":1,"help":"configureAvailableCustomDimensions01_mac(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions01_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions02","kind":1,"help":"configureAvailableCustomDimensions02_mac(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions02_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions03","kind":1,"help":"configureAvailableCustomDimensions03_mac(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions03_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceCurrencies","kind":1,"help":"configureAvailableResourceCurrencies_mac(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceCurrencies_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceItemTypes","kind":1,"help":"configureAvailableResourceItemTypes_mac(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceItemTypes_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureBuild","kind":1,"help":"configureBuild_mac(build:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureBuild_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureUserId","kind":1,"help":"configureUserId_mac(id:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureUserId_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"initialize","kind":1,"help":"native_ga_initialize(key:string, secret:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"native_ga_initialize_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureSdkGameEngineVersion","kind":1,"help":"configureSdkGameEngineVersion_mac(version:string)","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"configureSdkGameEngineVersion_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureGameEngineVersion","kind":1,"help":"configureGameEngineVersion_mac(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureGameEngineVersion_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEvent","kind":1,"help":"addProgressionEvent_mac(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEvent_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEvent","kind":1,"help":"addDesignEvent_mac(eventId:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addDesignEvent_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEventWithValue","kind":1,"help":"addDesignEventWithValue_mac(eventId:string, value:double)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"addDesignEventWithValue_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addErrorEvent","kind":1,"help":"addErrorEvent(severity:double, message:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"addErrorEvent_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledManualSessionHandling","kind":1,"help":"setEnabledManualSessionHandling_mac(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledManualSessionHandling_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension01","kind":1,"help":"setCustomDimension01_mac(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension01_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension02","kind":1,"help":"setCustomDimension02_mac(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension02_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension03","kind":1,"help":"setCustomDimension03_mac(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension03_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"gameAnalyticsStartSession","kind":1,"help":"startSession_mac()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"startSession_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"gameAnalyticsEndSession","kind":1,"help":"endSession_mac()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"endSession_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onQuit","kind":1,"help":"onStop_mac()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onStop_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onResume","kind":1,"help":"onResume_mac()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onResume_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addBusinessEventJson","kind":1,"help":"addBusinessEventJson_mac(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventJson_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addResourceEventJson","kind":1,"help":"addResourceEventJson_mac(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addResourceEventJson_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEventWithScoreJson","kind":1,"help":"addProgressionEventWithScoreJson_mac(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEventWithScoreJson_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsString","kind":1,"help":"getRemoteConfigsValueAsString_mac(key:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsString_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"","kind":1,"help":"","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"GameAnalyticsExt_Function32","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsStringWithDefaultValue","kind":1,"help":"getRemoteConfigsValueAsStringWithDefaultValue_mac(key:string, defaultValue:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsStringWithDefaultValue_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"isRemoteConfigsReady","kind":1,"help":"isRemoteConfigsReady_mac()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"isRemoteConfigsReady_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsContentAsString","kind":1,"help":"getRemoteConfigsContentAsString_mac()","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"getRemoteConfigsContentAsString_mac","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledEventSubmission","kind":1,"help":"setEnabledEventSubmission_mac(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledEventSubmission_mac","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":2,"order":[
+      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":2,"filename":"libGameAnalytics.dylib","final":"","functions":[
+        {"$GMExtensionFunction":"","%Name":"setEnabledInfoLog_mac","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledInfoLog","help":"setEnabledInfoLog_mac(flag:bool)","hidden":false,"kind":1,"name":"setEnabledInfoLog_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledVerboseLog_mac","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledVerboseLog","help":"setEnabledVerboseLog_mac(flag:bool)","hidden":false,"kind":1,"name":"setEnabledVerboseLog_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions01_mac","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions01","help":"configureAvailableCustomDimensions01_mac(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions01_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions02_mac","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions02","help":"configureAvailableCustomDimensions02_mac(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions02_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions03_mac","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions03","help":"configureAvailableCustomDimensions03_mac(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions03_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceCurrencies_mac","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceCurrencies","help":"configureAvailableResourceCurrencies_mac(json:string)","hidden":false,"kind":1,"name":"configureAvailableResourceCurrencies_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceItemTypes_mac","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceItemTypes","help":"configureAvailableResourceItemTypes_mac(json:string)","hidden":false,"kind":1,"name":"configureAvailableResourceItemTypes_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureBuild_mac","argCount":0,"args":[1,],"documentation":"","externalName":"configureBuild","help":"configureBuild_mac(build:string)","hidden":false,"kind":1,"name":"configureBuild_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureUserId_mac","argCount":0,"args":[1,],"documentation":"","externalName":"configureUserId","help":"configureUserId_mac(id:string)","hidden":false,"kind":1,"name":"configureUserId_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"native_ga_initialize_mac","argCount":0,"args":[1,1,],"documentation":"","externalName":"initialize","help":"native_ga_initialize(key:string, secret:string)","hidden":false,"kind":1,"name":"native_ga_initialize_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureSdkGameEngineVersion_mac","argCount":0,"args":[],"documentation":"","externalName":"configureSdkGameEngineVersion","help":"configureSdkGameEngineVersion_mac(version:string)","hidden":false,"kind":1,"name":"configureSdkGameEngineVersion_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"configureGameEngineVersion_mac","argCount":0,"args":[1,],"documentation":"","externalName":"configureGameEngineVersion","help":"configureGameEngineVersion_mac(version:string)","hidden":false,"kind":1,"name":"configureGameEngineVersion_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEvent_mac","argCount":0,"args":[2,1,1,1,],"documentation":"","externalName":"addProgressionEvent","help":"addProgressionEvent_mac(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"kind":1,"name":"addProgressionEvent_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEvent_mac","argCount":0,"args":[1,],"documentation":"","externalName":"addDesignEvent","help":"addDesignEvent_mac(eventId:string)","hidden":false,"kind":1,"name":"addDesignEvent_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEventWithValue_mac","argCount":0,"args":[1,2,],"documentation":"","externalName":"addDesignEventWithValue","help":"addDesignEventWithValue_mac(eventId:string, value:double)","hidden":false,"kind":1,"name":"addDesignEventWithValue_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addErrorEvent_mac","argCount":0,"args":[2,1,],"documentation":"","externalName":"addErrorEvent","help":"addErrorEvent(severity:double, message:string)","hidden":false,"kind":1,"name":"addErrorEvent_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledManualSessionHandling_mac","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledManualSessionHandling","help":"setEnabledManualSessionHandling_mac(flag:bool)","hidden":false,"kind":1,"name":"setEnabledManualSessionHandling_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension01_mac","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension01","help":"setCustomDimension01_mac(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension01_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension02_mac","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension02","help":"setCustomDimension02_mac(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension02_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension03_mac","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension03","help":"setCustomDimension03_mac(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension03_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"startSession_mac","argCount":0,"args":[],"documentation":"","externalName":"gameAnalyticsStartSession","help":"startSession_mac()","hidden":false,"kind":1,"name":"startSession_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"endSession_mac","argCount":0,"args":[],"documentation":"","externalName":"gameAnalyticsEndSession","help":"endSession_mac()","hidden":false,"kind":1,"name":"endSession_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onStop_mac","argCount":0,"args":[],"documentation":"","externalName":"onQuit","help":"onStop_mac()","hidden":false,"kind":1,"name":"onStop_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onResume_mac","argCount":0,"args":[],"documentation":"","externalName":"onResume","help":"onResume_mac()","hidden":false,"kind":1,"name":"onResume_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventJson_mac","argCount":0,"args":[1,],"documentation":"","externalName":"addBusinessEventJson","help":"addBusinessEventJson_mac(json:string)","hidden":false,"kind":1,"name":"addBusinessEventJson_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addResourceEventJson_mac","argCount":0,"args":[1,],"documentation":"","externalName":"addResourceEventJson","help":"addResourceEventJson_mac(json:string)","hidden":false,"kind":1,"name":"addResourceEventJson_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEventWithScoreJson_mac","argCount":0,"args":[1,],"documentation":"","externalName":"addProgressionEventWithScoreJson","help":"addProgressionEventWithScoreJson_mac(json:string)","hidden":false,"kind":1,"name":"addProgressionEventWithScoreJson_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsString_mac","argCount":0,"args":[1,],"documentation":"","externalName":"getRemoteConfigsValueAsString","help":"getRemoteConfigsValueAsString_mac(key:string)","hidden":false,"kind":1,"name":"getRemoteConfigsValueAsString_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"GameAnalyticsExt_Function32","argCount":0,"args":[],"documentation":"","externalName":"","help":"","hidden":false,"kind":1,"name":"GameAnalyticsExt_Function32","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsStringWithDefaultValue_mac","argCount":0,"args":[1,1,],"documentation":"","externalName":"getRemoteConfigsValueAsStringWithDefaultValue","help":"getRemoteConfigsValueAsStringWithDefaultValue_mac(key:string, defaultValue:string)","hidden":false,"kind":1,"name":"getRemoteConfigsValueAsStringWithDefaultValue_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"isRemoteConfigsReady_mac","argCount":0,"args":[],"documentation":"","externalName":"isRemoteConfigsReady","help":"isRemoteConfigsReady_mac()","hidden":false,"kind":1,"name":"isRemoteConfigsReady_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsContentAsString_mac","argCount":0,"args":[],"documentation":"","externalName":"getRemoteConfigsContentAsString","help":"getRemoteConfigsContentAsString_mac()","hidden":false,"kind":1,"name":"getRemoteConfigsContentAsString_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledEventSubmission_mac","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledEventSubmission","help":"setEnabledEventSubmission_mac(flag:bool)","hidden":false,"kind":1,"name":"setEnabledEventSubmission_mac","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+      ],"init":"","kind":1,"name":"","order":[
         {"name":"setEnabledInfoLog_mac","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledVerboseLog_mac","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"configureAvailableCustomDimensions01_mac","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
@@ -550,100 +299,41 @@
         {"name":"isRemoteConfigsReady_mac","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"getRemoteConfigsContentAsString_mac","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledEventSubmission_mac","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"GameAnalytics.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
-        {"externalName":"setEnabledInfoLog","kind":1,"help":"setEnabledInfoLog_windows(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledInfoLog_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledVerboseLog","kind":1,"help":"setEnabledVerboseLog_windows(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledVerboseLog_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions01","kind":1,"help":"configureAvailableCustomDimensions01_windows(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions01_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions02","kind":1,"help":"configureAvailableCustomDimensions02_windows(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions02_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions03","kind":1,"help":"configureAvailableCustomDimensions03_windows(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions03_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceCurrencies","kind":1,"help":"configureAvailableResourceCurrencies_windows(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceCurrencies_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceItemTypes","kind":1,"help":"configureAvailableResourceItemTypes_windows(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceItemTypes_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureBuild","kind":1,"help":"configureBuild_windows(build:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureBuild_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureUserId","kind":1,"help":"configureUserId_windows(id:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureUserId_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"initialize","kind":1,"help":"native_ga_initialize_windows(key:string, secret:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"native_ga_initialize_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureSdkGameEngineVersion","kind":1,"help":"configureSdkGameEngineVersion_windows(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureSdkGameEngineVersion_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureGameEngineVersion","kind":1,"help":"configureGameEngineVersion_windows(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureGameEngineVersion_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEvent","kind":1,"help":"addProgressionEvent_windows(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEvent_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEvent","kind":1,"help":"addDesignEvent_windows(eventId:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addDesignEvent_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEventWithValue","kind":1,"help":"addDesignEventWithValue_windows(eventId:string, value:double)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"addDesignEventWithValue_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addErrorEvent","kind":1,"help":"addErrorEvent_windows(severity:double, message:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"addErrorEvent_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledManualSessionHandling","kind":1,"help":"setEnabledManualSessionHandling_windows(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledManualSessionHandling_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension01","kind":1,"help":"setCustomDimension01_windows(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension01_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension02","kind":1,"help":"setCustomDimension02_windows(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension02_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension03","kind":1,"help":"setCustomDimension03_windows(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension03_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"gameAnalyticsStartSession","kind":1,"help":"startSession_windows()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"startSession_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"gameAnalyticsEndSession","kind":1,"help":"endSession_windows()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"endSession_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onQuit","kind":1,"help":"onStop_windows()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onStop_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onResume","kind":1,"help":"onResume_windows()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onResume_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addBusinessEventJson","kind":1,"help":"addBusinessEventJson_windows(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventJson_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addResourceEventJson","kind":1,"help":"addResourceEventJson(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addResourceEventJson_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEventWithScoreJson","kind":1,"help":"addProgressionEventWithScoreJson_windows(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEventWithScoreJson_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsString","kind":1,"help":"getRemoteConfigsValueAsString_windows(key:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsString_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsStringWithDefaultValue","kind":1,"help":"getRemoteConfigsValueAsStringWithDefaultValue_windows(key:string, defaultValue:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsStringWithDefaultValue_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"isRemoteConfigsReady","kind":1,"help":"isRemoteConfigsReady_windows()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"isRemoteConfigsReady_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsContentAsString","kind":1,"help":"getRemoteConfigsContentAsString_windows()","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"getRemoteConfigsContentAsString_windows","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledEventSubmission","kind":1,"help":"setEnabledEventSubmission_windows(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledEventSubmission_windows","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":64,"order":[
+      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":64,"filename":"GameAnalytics.dll","final":"","functions":[
+        {"$GMExtensionFunction":"","%Name":"setEnabledInfoLog_windows","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledInfoLog","help":"setEnabledInfoLog_windows(flag:bool)","hidden":false,"kind":1,"name":"setEnabledInfoLog_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledVerboseLog_windows","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledVerboseLog","help":"setEnabledVerboseLog_windows(flag:bool)","hidden":false,"kind":1,"name":"setEnabledVerboseLog_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions01_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions01","help":"configureAvailableCustomDimensions01_windows(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions01_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions02_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions02","help":"configureAvailableCustomDimensions02_windows(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions02_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions03_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions03","help":"configureAvailableCustomDimensions03_windows(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions03_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceCurrencies_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceCurrencies","help":"configureAvailableResourceCurrencies_windows(json:string)","hidden":false,"kind":1,"name":"configureAvailableResourceCurrencies_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceItemTypes_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceItemTypes","help":"configureAvailableResourceItemTypes_windows(json:string)","hidden":false,"kind":1,"name":"configureAvailableResourceItemTypes_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureBuild_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureBuild","help":"configureBuild_windows(build:string)","hidden":false,"kind":1,"name":"configureBuild_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureUserId_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureUserId","help":"configureUserId_windows(id:string)","hidden":false,"kind":1,"name":"configureUserId_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"native_ga_initialize_windows","argCount":0,"args":[1,1,],"documentation":"","externalName":"initialize","help":"native_ga_initialize_windows(key:string, secret:string)","hidden":false,"kind":1,"name":"native_ga_initialize_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureSdkGameEngineVersion_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureSdkGameEngineVersion","help":"configureSdkGameEngineVersion_windows(version:string)","hidden":false,"kind":1,"name":"configureSdkGameEngineVersion_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureGameEngineVersion_windows","argCount":0,"args":[1,],"documentation":"","externalName":"configureGameEngineVersion","help":"configureGameEngineVersion_windows(version:string)","hidden":false,"kind":1,"name":"configureGameEngineVersion_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEvent_windows","argCount":0,"args":[2,1,1,1,],"documentation":"","externalName":"addProgressionEvent","help":"addProgressionEvent_windows(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"kind":1,"name":"addProgressionEvent_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEvent_windows","argCount":0,"args":[1,],"documentation":"","externalName":"addDesignEvent","help":"addDesignEvent_windows(eventId:string)","hidden":false,"kind":1,"name":"addDesignEvent_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEventWithValue_windows","argCount":0,"args":[1,2,],"documentation":"","externalName":"addDesignEventWithValue","help":"addDesignEventWithValue_windows(eventId:string, value:double)","hidden":false,"kind":1,"name":"addDesignEventWithValue_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addErrorEvent_windows","argCount":0,"args":[2,1,],"documentation":"","externalName":"addErrorEvent","help":"addErrorEvent_windows(severity:double, message:string)","hidden":false,"kind":1,"name":"addErrorEvent_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledManualSessionHandling_windows","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledManualSessionHandling","help":"setEnabledManualSessionHandling_windows(flag:bool)","hidden":false,"kind":1,"name":"setEnabledManualSessionHandling_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension01_windows","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension01","help":"setCustomDimension01_windows(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension01_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension02_windows","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension02","help":"setCustomDimension02_windows(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension02_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension03_windows","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension03","help":"setCustomDimension03_windows(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension03_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"startSession_windows","argCount":0,"args":[],"documentation":"","externalName":"gameAnalyticsStartSession","help":"startSession_windows()","hidden":false,"kind":1,"name":"startSession_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"endSession_windows","argCount":0,"args":[],"documentation":"","externalName":"gameAnalyticsEndSession","help":"endSession_windows()","hidden":false,"kind":1,"name":"endSession_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onStop_windows","argCount":0,"args":[],"documentation":"","externalName":"onQuit","help":"onStop_windows()","hidden":false,"kind":1,"name":"onStop_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onResume_windows","argCount":0,"args":[],"documentation":"","externalName":"onResume","help":"onResume_windows()","hidden":false,"kind":1,"name":"onResume_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventJson_windows","argCount":0,"args":[1,],"documentation":"","externalName":"addBusinessEventJson","help":"addBusinessEventJson_windows(json:string)","hidden":false,"kind":1,"name":"addBusinessEventJson_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addResourceEventJson_windows","argCount":0,"args":[1,],"documentation":"","externalName":"addResourceEventJson","help":"addResourceEventJson(json:string)","hidden":false,"kind":1,"name":"addResourceEventJson_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEventWithScoreJson_windows","argCount":0,"args":[1,],"documentation":"","externalName":"addProgressionEventWithScoreJson","help":"addProgressionEventWithScoreJson_windows(json:string)","hidden":false,"kind":1,"name":"addProgressionEventWithScoreJson_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsString_windows","argCount":0,"args":[1,],"documentation":"","externalName":"getRemoteConfigsValueAsString","help":"getRemoteConfigsValueAsString_windows(key:string)","hidden":false,"kind":1,"name":"getRemoteConfigsValueAsString_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsStringWithDefaultValue_windows","argCount":0,"args":[1,1,],"documentation":"","externalName":"getRemoteConfigsValueAsStringWithDefaultValue","help":"getRemoteConfigsValueAsStringWithDefaultValue_windows(key:string, defaultValue:string)","hidden":false,"kind":1,"name":"getRemoteConfigsValueAsStringWithDefaultValue_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"isRemoteConfigsReady_windows","argCount":0,"args":[],"documentation":"","externalName":"isRemoteConfigsReady","help":"isRemoteConfigsReady_windows()","hidden":false,"kind":1,"name":"isRemoteConfigsReady_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsContentAsString_windows","argCount":0,"args":[],"documentation":"","externalName":"getRemoteConfigsContentAsString","help":"getRemoteConfigsContentAsString_windows()","hidden":false,"kind":1,"name":"getRemoteConfigsContentAsString_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledEventSubmission_windows","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledEventSubmission","help":"setEnabledEventSubmission_windows(flag:bool)","hidden":false,"kind":1,"name":"setEnabledEventSubmission_windows","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+      ],"init":"","kind":1,"name":"","order":[
         {"name":"setEnabledInfoLog_windows","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledVerboseLog_windows","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"configureAvailableCustomDimensions01_windows","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
@@ -676,100 +366,41 @@
         {"name":"isRemoteConfigsReady_windows","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"getRemoteConfigsContentAsString_windows","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledEventSubmission_windows","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"GameAnalytics.UWP.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
-        {"externalName":"setEnabledInfoLog","kind":1,"help":"setEnabledInfoLog_uwp(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledInfoLog_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledVerboseLog","kind":1,"help":"setEnabledVerboseLog_uwp(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledVerboseLog_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions01","kind":1,"help":"configureAvailableCustomDimensions01_uwp(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions01_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions02","kind":1,"help":"configureAvailableCustomDimensions02_uwp(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions02_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions03","kind":1,"help":"configureAvailableCustomDimensions03_uwp(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions03_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceCurrencies","kind":1,"help":"configureAvailableResourceCurrencies_uwp(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceCurrencies_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceItemTypes","kind":1,"help":"configureAvailableResourceItemTypes_uwp(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceItemTypes_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureBuild","kind":1,"help":"configureBuild_uwp(build:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureBuild_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureUserId","kind":1,"help":"configureUserId_uwp(id:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureUserId_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"initialize","kind":1,"help":"native_ga_initialize_uwp(key:string, secret:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"native_ga_initialize_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureSdkGameEngineVersion","kind":1,"help":"configureSdkGameEngineVersion_uwp(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureSdkGameEngineVersion_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureGameEngineVersion","kind":1,"help":"configureGameEngineVersion_uwp(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureGameEngineVersion_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEvent","kind":1,"help":"addProgressionEvent_uwp(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEvent_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEvent","kind":1,"help":"addDesignEvent_uwp(eventId:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addDesignEvent_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEventWithValue","kind":1,"help":"addDesignEventWithValue_uwp(eventId:string, value:double)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"addDesignEventWithValue_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addErrorEvent","kind":1,"help":"addErrorEvent_uwp(severity:double, message:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"addErrorEvent_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledManualSessionHandling","kind":1,"help":"setEnabledManualSessionHandling_uwp(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledManualSessionHandling_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension01","kind":1,"help":"setCustomDimension01_uwp(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension01_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension02","kind":1,"help":"setCustomDimension02_uwp(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension02_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension03","kind":1,"help":"setCustomDimension03_uwp(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension03_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"gameAnalyticsStartSession","kind":1,"help":"startSession_uwp()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"startSession_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"gameAnalyticsEndSession","kind":1,"help":"endSession_uwp()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"endSession_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onQuit","kind":1,"help":"onStop_uwp()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onStop_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onResume","kind":1,"help":"onResume_uwp()","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onResume_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addBusinessEventJson","kind":1,"help":"addBusinessEventJson_uwp(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventJson_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addResourceEventJson","kind":1,"help":"addResourceEventJson_uwp(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addResourceEventJson_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEventWithScoreJson","kind":1,"help":"addProgressionEventWithScoreJson(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEventWithScoreJson_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsString","kind":1,"help":"getRemoteConfigsValueAsString_uwp(key:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsString_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsStringWithDefaultValue","kind":1,"help":"getRemoteConfigsValueAsStringWithDefaultValue_uwp(key:string, defaultValue:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsStringWithDefaultValue_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"isRemoteConfigsReady","kind":1,"help":"isRemoteConfigsReady_uwp()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"isRemoteConfigsReady_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsContentAsString","kind":1,"help":"getRemoteConfigsContentAsString_uwp()","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"getRemoteConfigsContentAsString_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledEventSumission","kind":1,"help":"setEnabledEventSubmission_uwp(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledEventSubmission_uwp","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":35184372088832,"order":[
+      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":35184372088832,"filename":"GameAnalytics.UWP.dll","final":"","functions":[
+        {"$GMExtensionFunction":"","%Name":"setEnabledInfoLog_uwp","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledInfoLog","help":"setEnabledInfoLog_uwp(flag:bool)","hidden":false,"kind":1,"name":"setEnabledInfoLog_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledVerboseLog_uwp","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledVerboseLog","help":"setEnabledVerboseLog_uwp(flag:bool)","hidden":false,"kind":1,"name":"setEnabledVerboseLog_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions01_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions01","help":"configureAvailableCustomDimensions01_uwp(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions01_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions02_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions02","help":"configureAvailableCustomDimensions02_uwp(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions02_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions03_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions03","help":"configureAvailableCustomDimensions03_uwp(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions03_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceCurrencies_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceCurrencies","help":"configureAvailableResourceCurrencies_uwp(json:string)","hidden":false,"kind":1,"name":"configureAvailableResourceCurrencies_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceItemTypes_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceItemTypes","help":"configureAvailableResourceItemTypes_uwp(json:string)","hidden":false,"kind":1,"name":"configureAvailableResourceItemTypes_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureBuild_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureBuild","help":"configureBuild_uwp(build:string)","hidden":false,"kind":1,"name":"configureBuild_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureUserId_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureUserId","help":"configureUserId_uwp(id:string)","hidden":false,"kind":1,"name":"configureUserId_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"native_ga_initialize_uwp","argCount":0,"args":[1,1,],"documentation":"","externalName":"initialize","help":"native_ga_initialize_uwp(key:string, secret:string)","hidden":false,"kind":1,"name":"native_ga_initialize_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureSdkGameEngineVersion_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureSdkGameEngineVersion","help":"configureSdkGameEngineVersion_uwp(version:string)","hidden":false,"kind":1,"name":"configureSdkGameEngineVersion_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureGameEngineVersion_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"configureGameEngineVersion","help":"configureGameEngineVersion_uwp(version:string)","hidden":false,"kind":1,"name":"configureGameEngineVersion_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEvent_uwp","argCount":0,"args":[2,1,1,1,],"documentation":"","externalName":"addProgressionEvent","help":"addProgressionEvent_uwp(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"kind":1,"name":"addProgressionEvent_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEvent_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"addDesignEvent","help":"addDesignEvent_uwp(eventId:string)","hidden":false,"kind":1,"name":"addDesignEvent_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEventWithValue_uwp","argCount":0,"args":[1,2,],"documentation":"","externalName":"addDesignEventWithValue","help":"addDesignEventWithValue_uwp(eventId:string, value:double)","hidden":false,"kind":1,"name":"addDesignEventWithValue_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addErrorEvent_uwp","argCount":0,"args":[2,1,],"documentation":"","externalName":"addErrorEvent","help":"addErrorEvent_uwp(severity:double, message:string)","hidden":false,"kind":1,"name":"addErrorEvent_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledManualSessionHandling_uwp","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledManualSessionHandling","help":"setEnabledManualSessionHandling_uwp(flag:bool)","hidden":false,"kind":1,"name":"setEnabledManualSessionHandling_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension01_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension01","help":"setCustomDimension01_uwp(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension01_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension02_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension02","help":"setCustomDimension02_uwp(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension02_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension03_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension03","help":"setCustomDimension03_uwp(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension03_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"startSession_uwp","argCount":0,"args":[],"documentation":"","externalName":"gameAnalyticsStartSession","help":"startSession_uwp()","hidden":false,"kind":1,"name":"startSession_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"endSession_uwp","argCount":0,"args":[],"documentation":"","externalName":"gameAnalyticsEndSession","help":"endSession_uwp()","hidden":false,"kind":1,"name":"endSession_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onStop_uwp","argCount":0,"args":[],"documentation":"","externalName":"onQuit","help":"onStop_uwp()","hidden":false,"kind":1,"name":"onStop_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onResume_uwp","argCount":0,"args":[],"documentation":"","externalName":"onResume","help":"onResume_uwp()","hidden":false,"kind":1,"name":"onResume_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventJson_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"addBusinessEventJson","help":"addBusinessEventJson_uwp(json:string)","hidden":false,"kind":1,"name":"addBusinessEventJson_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addResourceEventJson_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"addResourceEventJson","help":"addResourceEventJson_uwp(json:string)","hidden":false,"kind":1,"name":"addResourceEventJson_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEventWithScoreJson_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"addProgressionEventWithScoreJson","help":"addProgressionEventWithScoreJson(json:string)","hidden":false,"kind":1,"name":"addProgressionEventWithScoreJson_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsString_uwp","argCount":0,"args":[1,],"documentation":"","externalName":"getRemoteConfigsValueAsString","help":"getRemoteConfigsValueAsString_uwp(key:string)","hidden":false,"kind":1,"name":"getRemoteConfigsValueAsString_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsStringWithDefaultValue_uwp","argCount":0,"args":[1,1,],"documentation":"","externalName":"getRemoteConfigsValueAsStringWithDefaultValue","help":"getRemoteConfigsValueAsStringWithDefaultValue_uwp(key:string, defaultValue:string)","hidden":false,"kind":1,"name":"getRemoteConfigsValueAsStringWithDefaultValue_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"isRemoteConfigsReady_uwp","argCount":0,"args":[],"documentation":"","externalName":"isRemoteConfigsReady","help":"isRemoteConfigsReady_uwp()","hidden":false,"kind":1,"name":"isRemoteConfigsReady_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsContentAsString_uwp","argCount":0,"args":[],"documentation":"","externalName":"getRemoteConfigsContentAsString","help":"getRemoteConfigsContentAsString_uwp()","hidden":false,"kind":1,"name":"getRemoteConfigsContentAsString_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledEventSubmission_uwp","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledEventSumission","help":"setEnabledEventSubmission_uwp(flag:bool)","hidden":false,"kind":1,"name":"setEnabledEventSubmission_uwp","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+      ],"init":"","kind":1,"name":"","order":[
         {"name":"setEnabledInfoLog_uwp","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledVerboseLog_uwp","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"configureAvailableCustomDimensions01_uwp","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
@@ -802,98 +433,41 @@
         {"name":"isRemoteConfigsReady_uwp","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"getRemoteConfigsContentAsString_uwp","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledEventSubmission_uwp","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"libGameAnalytics.so","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
-        {"externalName":"setEnabledInfoLog","kind":1,"help":"setEnabledInfoLog_linux(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledInfoLog_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledVerboseLog","kind":1,"help":"setEnabledVerboseLog(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledVerboseLog_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions01","kind":1,"help":"configureAvailableCustomDimensions01_linux(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions01_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions02","kind":1,"help":"configureAvailableCustomDimensions02_linux(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions02_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableCustomDimensions03","kind":1,"help":"configureAvailableCustomDimensions03_linux(json:string)","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"configureAvailableCustomDimensions03_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceCurrencies","kind":1,"help":"configureAvailableResourceCurrencies_linux(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceCurrencies_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureAvailableResourceItemTypes","kind":1,"help":"configureAvailableResourceItemTypes_linux(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureAvailableResourceItemTypes_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureBuild","kind":1,"help":"configureBuild_linux(build:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureBuild_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureUserId","kind":1,"help":"configureUserId_linux(id:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureUserId_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"initialize","kind":1,"help":"native_ga_initialize_linux(key:string, secret:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"native_ga_initialize_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureSdkGameEngineVersion","kind":1,"help":"configureSdkGameEngineVersion_linux(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureSdkGameEngineVersion_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"configureGameEngineVersion","kind":1,"help":"configureGameEngineVersion_linux(version:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"configureGameEngineVersion_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEvent","kind":1,"help":"addProgressionEvent_linux(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEvent_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEvent","kind":1,"help":"addDesignEvent_linux(eventId:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addDesignEvent_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addDesignEventWithValue","kind":1,"help":"addDesignEventWithValue_linux(eventId:string, value:double)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-            2,
-          ],"resourceVersion":"1.0","name":"addDesignEventWithValue_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addErrorEvent","kind":1,"help":"addErrorEvent_linux(severity:double, message:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"addErrorEvent_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledManualSessionHandling","kind":1,"help":"setEnabledManualSessionHandling_linux(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledManualSessionHandling_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension01","kind":1,"help":"setCustomDimension01_linux(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension01_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension02","kind":1,"help":"setCustomDimension02_linux(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension02_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setCustomDimension03","kind":1,"help":"setCustomDimension03_linux(dimension:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"setCustomDimension03_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"gameAnalyticsStartSession","kind":1,"help":"startSession_linux()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"startSession_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"gameAnalyticsEndSession","kind":1,"help":"endSession_linux()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"endSession_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onQuit","kind":1,"help":"onStop_linux()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onStop_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"onResume","kind":1,"help":"onResume_linux()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"onResume_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addBusinessEventJson","kind":1,"help":"addBusinessEventJson_linux(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addBusinessEventJson_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addResourceEventJson","kind":1,"help":"addResourceEventJson_linux(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addResourceEventJson_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"addProgressionEventWithScoreJson","kind":1,"help":"addProgressionEventWithScoreJson_linux(json:string)","hidden":false,"returnType":2,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"addProgressionEventWithScoreJson_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsString","kind":1,"help":"getRemoteConfigsValueAsString_linux(key:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsString_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsValueAsStringWithDefaultValue","kind":1,"help":"getRemoteConfigsValueAsStringWithDefaultValue_linux(key:string, defaultValue:string)","hidden":false,"returnType":1,"argCount":0,"args":[
-            1,
-            1,
-          ],"resourceVersion":"1.0","name":"getRemoteConfigsValueAsStringWithDefaultValue_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"isRemoteConfigsReady","kind":1,"help":"isRemoteConfigsReady_linux()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"isRemoteConfigsReady_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"getRemoteConfigsContentAsString","kind":1,"help":"getRemoteConfigsContentAsString_linux","hidden":false,"returnType":1,"argCount":0,"args":[],"resourceVersion":"1.0","name":"getRemoteConfigsContentAsString_linux","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"setEnabledEventSubmission","kind":1,"help":"setEnabledEventSubmission_linux(flag:bool)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-          ],"resourceVersion":"1.0","name":"setEnabledEventSubmission_linux","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":128,"order":[
+      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":128,"filename":"libGameAnalytics.so","final":"","functions":[
+        {"$GMExtensionFunction":"","%Name":"setEnabledInfoLog_linux","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledInfoLog","help":"setEnabledInfoLog_linux(flag:bool)","hidden":false,"kind":1,"name":"setEnabledInfoLog_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledVerboseLog_linux","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledVerboseLog","help":"setEnabledVerboseLog(flag:bool)","hidden":false,"kind":1,"name":"setEnabledVerboseLog_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions01_linux","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions01","help":"configureAvailableCustomDimensions01_linux(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions01_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions02_linux","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableCustomDimensions02","help":"configureAvailableCustomDimensions02_linux(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions02_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableCustomDimensions03_linux","argCount":0,"args":[],"documentation":"","externalName":"configureAvailableCustomDimensions03","help":"configureAvailableCustomDimensions03_linux(json:string)","hidden":false,"kind":1,"name":"configureAvailableCustomDimensions03_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceCurrencies_linux","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceCurrencies","help":"configureAvailableResourceCurrencies_linux(json:string)","hidden":false,"kind":1,"name":"configureAvailableResourceCurrencies_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureAvailableResourceItemTypes_linux","argCount":0,"args":[1,],"documentation":"","externalName":"configureAvailableResourceItemTypes","help":"configureAvailableResourceItemTypes_linux(json:string)","hidden":false,"kind":1,"name":"configureAvailableResourceItemTypes_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureBuild_linux","argCount":0,"args":[1,],"documentation":"","externalName":"configureBuild","help":"configureBuild_linux(build:string)","hidden":false,"kind":1,"name":"configureBuild_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureUserId_linux","argCount":0,"args":[1,],"documentation":"","externalName":"configureUserId","help":"configureUserId_linux(id:string)","hidden":false,"kind":1,"name":"configureUserId_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"native_ga_initialize_linux","argCount":0,"args":[1,1,],"documentation":"","externalName":"initialize","help":"native_ga_initialize_linux(key:string, secret:string)","hidden":false,"kind":1,"name":"native_ga_initialize_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureSdkGameEngineVersion_linux","argCount":0,"args":[1,],"documentation":"","externalName":"configureSdkGameEngineVersion","help":"configureSdkGameEngineVersion_linux(version:string)","hidden":false,"kind":1,"name":"configureSdkGameEngineVersion_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"configureGameEngineVersion_linux","argCount":0,"args":[1,],"documentation":"","externalName":"configureGameEngineVersion","help":"configureGameEngineVersion_linux(version:string)","hidden":false,"kind":1,"name":"configureGameEngineVersion_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEvent_linux","argCount":0,"args":[2,1,1,1,],"documentation":"","externalName":"addProgressionEvent","help":"addProgressionEvent_linux(status:double, progression1:string, progression2:string, progression3:string)","hidden":false,"kind":1,"name":"addProgressionEvent_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEvent_linux","argCount":0,"args":[1,],"documentation":"","externalName":"addDesignEvent","help":"addDesignEvent_linux(eventId:string)","hidden":false,"kind":1,"name":"addDesignEvent_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addDesignEventWithValue_linux","argCount":0,"args":[1,2,],"documentation":"","externalName":"addDesignEventWithValue","help":"addDesignEventWithValue_linux(eventId:string, value:double)","hidden":false,"kind":1,"name":"addDesignEventWithValue_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addErrorEvent_linux","argCount":0,"args":[2,1,],"documentation":"","externalName":"addErrorEvent","help":"addErrorEvent_linux(severity:double, message:string)","hidden":false,"kind":1,"name":"addErrorEvent_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledManualSessionHandling_linux","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledManualSessionHandling","help":"setEnabledManualSessionHandling_linux(flag:bool)","hidden":false,"kind":1,"name":"setEnabledManualSessionHandling_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension01_linux","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension01","help":"setCustomDimension01_linux(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension01_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension02_linux","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension02","help":"setCustomDimension02_linux(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension02_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCustomDimension03_linux","argCount":0,"args":[1,],"documentation":"","externalName":"setCustomDimension03","help":"setCustomDimension03_linux(dimension:string)","hidden":false,"kind":1,"name":"setCustomDimension03_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"startSession_linux","argCount":0,"args":[],"documentation":"","externalName":"gameAnalyticsStartSession","help":"startSession_linux()","hidden":false,"kind":1,"name":"startSession_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"endSession_linux","argCount":0,"args":[],"documentation":"","externalName":"gameAnalyticsEndSession","help":"endSession_linux()","hidden":false,"kind":1,"name":"endSession_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onStop_linux","argCount":0,"args":[],"documentation":"","externalName":"onQuit","help":"onStop_linux()","hidden":false,"kind":1,"name":"onStop_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"onResume_linux","argCount":0,"args":[],"documentation":"","externalName":"onResume","help":"onResume_linux()","hidden":false,"kind":1,"name":"onResume_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addBusinessEventJson_linux","argCount":0,"args":[1,],"documentation":"","externalName":"addBusinessEventJson","help":"addBusinessEventJson_linux(json:string)","hidden":false,"kind":1,"name":"addBusinessEventJson_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addResourceEventJson_linux","argCount":0,"args":[1,],"documentation":"","externalName":"addResourceEventJson","help":"addResourceEventJson_linux(json:string)","hidden":false,"kind":1,"name":"addResourceEventJson_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"addProgressionEventWithScoreJson_linux","argCount":0,"args":[1,],"documentation":"","externalName":"addProgressionEventWithScoreJson","help":"addProgressionEventWithScoreJson_linux(json:string)","hidden":false,"kind":1,"name":"addProgressionEventWithScoreJson_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsString_linux","argCount":0,"args":[1,],"documentation":"","externalName":"getRemoteConfigsValueAsString","help":"getRemoteConfigsValueAsString_linux(key:string)","hidden":false,"kind":1,"name":"getRemoteConfigsValueAsString_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsValueAsStringWithDefaultValue_linux","argCount":0,"args":[1,1,],"documentation":"","externalName":"getRemoteConfigsValueAsStringWithDefaultValue","help":"getRemoteConfigsValueAsStringWithDefaultValue_linux(key:string, defaultValue:string)","hidden":false,"kind":1,"name":"getRemoteConfigsValueAsStringWithDefaultValue_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"isRemoteConfigsReady_linux","argCount":0,"args":[],"documentation":"","externalName":"isRemoteConfigsReady","help":"isRemoteConfigsReady_linux()","hidden":false,"kind":1,"name":"isRemoteConfigsReady_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"getRemoteConfigsContentAsString_linux","argCount":0,"args":[],"documentation":"","externalName":"getRemoteConfigsContentAsString","help":"getRemoteConfigsContentAsString_linux","hidden":false,"kind":1,"name":"getRemoteConfigsContentAsString_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
+        {"$GMExtensionFunction":"","%Name":"setEnabledEventSubmission_linux","argCount":0,"args":[2,],"documentation":"","externalName":"setEnabledEventSubmission","help":"setEnabledEventSubmission_linux(flag:bool)","hidden":false,"kind":1,"name":"setEnabledEventSubmission_linux","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+      ],"init":"","kind":1,"name":"","order":[
         {"name":"setEnabledInfoLog_linux","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledVerboseLog_linux","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"configureAvailableCustomDimensions01_linux","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
@@ -926,49 +500,52 @@
         {"name":"isRemoteConfigsReady_linux","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"getRemoteConfigsContentAsString_linux","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
         {"name":"setEnabledEventSubmission_linux","path":"extensions/GameAnalyticsExt/GameAnalyticsExt.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
   ],
-  "classname": "GameAnalyticsExt",
-  "tvosclassname": null,
-  "tvosdelegatename": null,
-  "iosdelegatename": null,
-  "androidclassname": "GameAnalyticsExt",
-  "sourcedir": "",
-  "androidsourcedir": "",
-  "macsourcedir": "",
-  "maccompilerflags": "",
-  "tvosmaccompilerflags": null,
-  "maclinkerflags": "",
-  "tvosmaclinkerflags": null,
-  "iosplistinject": "",
-  "tvosplistinject": null,
-  "androidinject": "",
-  "androidmanifestinject": "",
-  "androidactivityinject": "",
-  "gradleinject": "",
-  "iosSystemFrameworkEntries": [
-    {"weakReference":false,"resourceVersion":"1.0","name":"AdSupport.framework","tags":[],"resourceType":"GMExtensionFrameworkEntry",},
-    {"weakReference":false,"resourceVersion":"1.0","name":"SystemConfiguration.framework","tags":[],"resourceType":"GMExtensionFrameworkEntry",},
+  "gradleinject":"",
+  "hasConvertedCodeInjection":true,
+  "helpfile":"",
+  "HTML5CodeInjection":"",
+  "html5Props":false,
+  "IncludedResources":[],
+  "installdir":"",
+  "iosCocoaPodDependencies":"",
+  "iosCocoaPods":"",
+  "ioscodeinjection":"",
+  "iosdelegatename":null,
+  "iosplistinject":"",
+  "iosProps":true,
+  "iosSystemFrameworkEntries":[
+    {"$GMExtensionFrameworkEntry":"","%Name":"AdSupport.framework","embed":0,"name":"AdSupport.framework","resourceType":"GMExtensionFrameworkEntry","resourceVersion":"2.0","weakReference":false,},
+    {"$GMExtensionFrameworkEntry":"","%Name":"SystemConfiguration.framework","embed":0,"name":"SystemConfiguration.framework","resourceType":"GMExtensionFrameworkEntry","resourceVersion":"2.0","weakReference":false,},
   ],
-  "tvosSystemFrameworkEntries": [],
-  "iosThirdPartyFrameworkEntries": [],
-  "tvosThirdPartyFrameworkEntries": [],
-  "IncludedResources": [],
-  "androidPermissions": [
-    "android.permission.INTERNET",
-    "android.permission.ACCESS_NETWORK_STATE",
-  ],
-  "copyToTargets": 35184372089070,
-  "iosCocoaPods": "",
-  "tvosCocoaPods": "",
-  "iosCocoaPodDependencies": "",
-  "tvosCocoaPodDependencies": "",
-  "parent": {
-    "name": "Extensions",
-    "path": "folders/Extensions.yy",
+  "iosThirdPartyFrameworkEntries":[],
+  "license":"",
+  "maccompilerflags":"",
+  "maclinkerflags":"",
+  "macsourcedir":"",
+  "name":"GameAnalyticsExt",
+  "options":[],
+  "optionsFile":"options.json",
+  "packageId":"",
+  "parent":{
+    "name":"Extensions",
+    "path":"folders/Extensions.yy",
   },
-  "resourceVersion": "1.2",
-  "name": "GameAnalyticsExt",
-  "tags": [],
-  "resourceType": "GMExtension",
+  "productId":"",
+  "resourceType":"GMExtension",
+  "resourceVersion":"2.0",
+  "sourcedir":"",
+  "supportedTargets":35184372089070,
+  "tvosclassname":null,
+  "tvosCocoaPodDependencies":"",
+  "tvosCocoaPods":"",
+  "tvoscodeinjection":"",
+  "tvosdelegatename":null,
+  "tvosmaccompilerflags":null,
+  "tvosmaclinkerflags":null,
+  "tvosplistinject":"",
+  "tvosProps":false,
+  "tvosSystemFrameworkEntries":[],
+  "tvosThirdPartyFrameworkEntries":[],
 }

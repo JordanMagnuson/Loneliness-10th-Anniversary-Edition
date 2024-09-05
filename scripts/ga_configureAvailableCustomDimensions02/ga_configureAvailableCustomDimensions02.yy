@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Game Analytics",
-    "path": "folders/Scripts/Game Analytics.yy",
+  "$GMScript":"v1",
+  "%Name":"ga_configureAvailableCustomDimensions02",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ga_configureAvailableCustomDimensions02",
+  "parent":{
+    "name":"Game Analytics",
+    "path":"folders/Scripts/Game Analytics.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ga_configureAvailableCustomDimensions02",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
